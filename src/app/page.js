@@ -1,11 +1,15 @@
 import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
+import { AboutSection } from "@/components/AboutSection";
+import { TechStackSection } from "@/components/TechStackSection";
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <HeroSection />
+      <AboutSection />
+      <TechStackSection />
 
       {/* Footer with Social Links */}
       <footer className="w-full bg-brand-surface/80 backdrop-blur-md py-8 border-t border-brand-border/50 mt-auto z-20 relative">

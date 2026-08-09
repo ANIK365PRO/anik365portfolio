@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F4C81" />
+      <stop offset="100%" stop-color="#082c4e" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer Circular Accents -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#E5E7EB" stroke-width="2" opacity="0.1" />
+  <path d="M 10 100 A 90 90 0 0 1 100 10" fill="none" stroke="#FFC300" stroke-width="4" stroke-linecap="round" />
+  <path d="M 190 100 A 90 90 0 0 1 100 190" fill="none" stroke="#0F4C81" stroke-width="4" stroke-linecap="round" />
+
+  <!-- The "A" (Anik) -->
+  <path d="M 70 140 L 100 60 L 130 140" fill="none" stroke="url(#blueGradient)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M 85 115 L 115 115" fill="none" stroke="url(#blueGradient)" stroke-width="12" stroke-linecap="round" />
+
+  <!-- The "M" (Mohanta) overlay in Accent Color -->
+  <path d="M 50 140 L 75 90 L 100 120 L 125 90 L 150 140" fill="none" stroke="#FFC300" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
