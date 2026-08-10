@@ -3,6 +3,7 @@
 
 :root {
   --color-primary-hex: #0F4C81;
+  --color-secondary-hex: #1E6091; 
   --color-accent-hex: #FFC300;
   
   --color-bg-hex: #F0F4F8;
@@ -22,6 +23,7 @@
 
 @theme inline {
   --color-brand-primary: var(--color-primary-hex);
+  --color-brand-secondary: var(--color-secondary-hex);
   --color-brand-accent: var(--color-accent-hex);
   --color-brand-bg: var(--color-bg-hex);
   --color-brand-surface: var(--color-surface-hex);

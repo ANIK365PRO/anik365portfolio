@@ -4,10 +4,10 @@ export function ContactSection() {
       <div className="max-w-[1280px] mx-auto w-full px-4 sm:px-6 md:pl-[120px] md:pr-10 lg:pl-[140px] lg:pr-20 flex flex-col items-center">
         {/* Header Section */}
         <div className="text-center mb-8 md:mb-12 max-w-2xl mx-auto">
-          <h1 className="font-['Hanken_Grotesk'] text-[48px] leading-[56px] font-bold tracking-tight text-brand-heading mb-2">
-            Contact Us
-          </h1>
-          <p className="font-['Manrope'] text-[18px] leading-[28px] text-brand-text">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-brand-heading mb-4">
+            Contact Me
+          </h2>
+          <p className="text-brand-text text-[18px] leading-[28px] opacity-80">
             Have a project in mind? Let's connect and discuss how I can help bring your ideas to life.
           </p>
         </div>
@@ -30,25 +30,25 @@ export function ContactSection() {
               <div className="flex items-center gap-4 group cursor-default">
                 <span className="material-symbols-outlined text-brand-primary group-hover:text-brand-accent transition-colors duration-200">mail</span>
                 <a className="font-['Manrope'] text-[16px] leading-[24px] text-brand-heading hover:text-brand-accent transition-colors duration-200" href="mailto:google@gmail.com">
-                  google@gmail.com
+                  anikmohanta75@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-4 group cursor-default">
                 <span className="material-symbols-outlined text-brand-primary group-hover:text-brand-accent transition-colors duration-200">call</span>
                 <a className="font-['Manrope'] text-[16px] leading-[24px] text-brand-heading hover:text-brand-accent transition-colors duration-200" href="tel:+9230000000">
-                  +92 30000000
+                  +880 1716608812
                 </a>
               </div>
               <div className="flex items-start gap-4 group cursor-default">
                 <span className="material-symbols-outlined text-brand-primary group-hover:text-brand-accent transition-colors duration-200 mt-1">location_on</span>
                 <span className="font-['Manrope'] text-[16px] leading-[24px] text-brand-heading">
-                  Lahore, Punjab,<br/>Pakistan
+                  Dhaka<br/>Bangladesh
                 </span>
               </div>
               <div className="flex items-center gap-4 group cursor-default">
                 <span className="material-symbols-outlined text-brand-primary group-hover:text-brand-accent transition-colors duration-200">chat</span>
                 <a className="font-['Manrope'] text-[16px] leading-[24px] text-brand-heading hover:text-brand-accent transition-colors duration-200" href="https://wa.me/9230000000">
-                  +92 30000000
+                  +880 1716608812
                 </a>
               </div>
             </div>

@@ -3,10 +3,10 @@ export function QualificationSection() {
     <section className="w-full relative overflow-hidden py-16 lg:py-24 transition-colors duration-300" id="qualification" data-purpose="qualification-section">
       <div className="max-w-[1280px] mx-auto w-full px-4 sm:px-6 md:pl-[120px] md:pr-10 lg:pl-[140px] lg:pr-20">
       <div className="text-center mb-12">
-        <h2 className="font-['Hanken_Grotesk'] text-[48px] leading-[56px] font-bold tracking-tight mb-2 text-brand-heading">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-brand-heading mb-4">
           Qualification
         </h2>
-        <p className="font-['Manrope'] text-[18px] leading-[28px] text-brand-text">
+        <p className="font-['Manrope'] text-[18px] leading-[28px] opacity-80 uppercase tracking-widest text-brand-text">
           My personal journey
         </p>
       </div>

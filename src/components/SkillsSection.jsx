@@ -12,7 +12,7 @@ export function SkillsSection() {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display-xl font-bold text-brand-heading mb-4 tracking-wide drop-shadow-sm dark:drop-shadow-2xl">
             Skills
           </h2>
-          <p className="text-brand-primary dark:text-[#a0c9ff] font-semibold text-sm tracking-widest uppercase opacity-90 drop-shadow-md">
+          <p className=" font-semibold text-sm tracking-widest uppercase opacity-90 drop-shadow-md">
             My Technical Level
           </p>
         </div>

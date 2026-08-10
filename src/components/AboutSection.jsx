@@ -26,7 +26,7 @@ export function AboutSection() {
           className="text-center mb-16 plx-layer-1 flex flex-col items-center"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display-xl font-bold text-brand-heading mb-6 tracking-wide drop-shadow-sm dark:drop-shadow-2xl">
-            Discover Me
+            About
           </h2>
           <div className="h-1.5 w-24 mx-auto bg-gradient-to-r from-brand-primary to-transparent rounded-full opacity-70"></div>
         </motion.div>

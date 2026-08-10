@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Download } from "lucide-react";
 import Image from "next/image";
@@ -33,13 +33,26 @@ const itemVariants = {
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <motion.nav
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="fixed top-0 w-full z-50 bg-brand-surface/80 backdrop-blur-md shadow-sm border-b border-brand-border/50 transition-all duration-300"
+      className={`fixed top-0 left-0 right-0 w-full z-[1000] transition-all duration-300 ${
+        isScrolled
+          ? "bg-brand-bg/95 backdrop-blur-[12px] border-b border-brand-border shadow-[0_4px_20px_rgba(0,0,0,0.15)]"
+          : "bg-transparent border-b border-transparent shadow-none"
+      }`}
     >
       <div className="flex justify-between items-center h-16 md:h-20 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 max-w-[1440px] mx-auto gap-4">
         <motion.div
@@ -47,7 +60,7 @@ export function Navbar() {
           className="flex items-center gap-3 cursor-pointer"
         >
           <Image src="/my-logo.svg" width={48} height={48} alt="Anik Mohanta Logo" className="w-10 h-10 md:w-12 md:h-12 object-contain" />
-          <span className="text-headline-sm font-headline-sm font-bold text-brand-heading hidden sm:block whitespace-nowrap">
+          <span className="text-headline-sm font-headline-sm font-bold text-brand-secondary hidden sm:block whitespace-nowrap">
             Anik Mohanta
           </span>
         </motion.div>

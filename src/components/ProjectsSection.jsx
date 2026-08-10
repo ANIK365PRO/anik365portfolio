@@ -3,10 +3,10 @@ export function ProjectsSection() {
     <section className="w-full relative overflow-hidden bg-brand-bg text-brand-text font-['Manrope'] py-16 lg:py-24 transition-colors duration-300" id="projects" data-purpose="projects-section">
       <div className="max-w-[1280px] mx-auto w-full px-4 sm:px-6 md:pl-[120px] md:pr-10 lg:pl-[140px] lg:pr-20 flex flex-col">
         <div className="text-center mb-8">
-          <h1 className="font-['Hanken_Grotesk'] text-[48px] leading-[56px] font-bold tracking-tight text-brand-heading mb-2">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-brand-heading mb-4">
             Projects
-          </h1>
-          <p className="font-['Manrope'] text-[18px] leading-[28px] text-brand-text">
+          </h2>
+          <p className="text-[18px] leading-[28px] opacity-80 max-w-2xl mx-auto mb-10 text-brand-text">
             Recent Projects
           </p>
         </div>

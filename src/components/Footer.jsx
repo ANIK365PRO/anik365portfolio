@@ -6,7 +6,7 @@ export function Footer() {
   };
 
   return (
-    <footer className="w-full bg-brand-surface/40 border-t-[6px] border-brand-accent pt-20 pb-12 px-6 md:px-12 lg:px-24 transition-colors duration-300">
+    <footer className="w-full bg-brand-surface/40 border-t-[6px] border-brand-border pt-20 pb-12 px-6 md:px-12 lg:px-24 transition-colors duration-300">
       <div className="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 mb-16">
         <div className="flex flex-col space-y-5">
           <div className="flex items-center gap-3">

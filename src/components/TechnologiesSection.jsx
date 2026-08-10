@@ -4,8 +4,8 @@ export function TechnologiesSection() {
       <div className="max-w-[1280px] mx-auto w-full px-4 sm:px-6 md:pl-[120px] md:pr-10 lg:pl-[140px] lg:pr-20">
         {/* Section Header */}
         <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-extrabold text-brand-heading mb-4 uppercase tracking-tight">Technologies</h2>
-          <p className="text-lg md:text-xl text-[#ffc300] font-bold uppercase tracking-widest">My Tech Stack</p>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-heading mb-4 uppercase tracking-tight">Technologies</h2>
+          <p className="text-lg md:text-xl text-brand-accent font-bold uppercase tracking-widest">My Tech Stack</p>
         </div>
 
         {/* Technologies Grid container */}
