@@ -8,10 +8,11 @@ import { ThemeToggle } from "./ThemeToggle";
 
 const navLinks = [
   { name: "Home", href: "#" },
-  { name: "Tech Stack", href: "#" },
-  { name: "Qualification", href: "#" },
-  { name: "Projects", href: "#" },
-  { name: "Contact", href: "#" },
+  { name: "About", href: "#about" },
+  { name: "Tech Stack", href: "#technologies" },
+  { name: "Qualification", href: "#qualification" },
+  { name: "Projects", href: "#projects" },
+  { name: "Contact", href: "#contact" },
 ];
 
 const containerVariants = {
@@ -40,7 +41,7 @@ export function Navbar() {
       transition={{ duration: 0.5 }}
       className="fixed top-0 w-full z-50 bg-brand-surface/80 backdrop-blur-md shadow-sm border-b border-brand-border/50 transition-all duration-300"
     >
-      <div className="flex justify-between items-center h-16 md:h-20 px-6 md:pl-[120px] md:pr-10 lg:pl-[140px] lg:pr-20 max-w-container-max mx-auto">
+      <div className="flex justify-between items-center h-16 md:h-20 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 max-w-[1440px] mx-auto gap-4">
         <motion.div
           whileHover={{ scale: 1.05 }}
           className="flex items-center gap-3 cursor-pointer"
@@ -116,7 +117,7 @@ export function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden bg-brand-surface border-t border-brand-border/50 px-margin-mobile overflow-hidden shadow-lg"
+            className="lg:hidden bg-brand-surface border-t border-brand-border/50 px-4 sm:px-6 overflow-hidden shadow-lg"
           >
             <div className="flex flex-col space-y-2 py-4">
               {navLinks.map((link, index) => (
@@ -129,6 +130,7 @@ export function Navbar() {
                       : "text-brand-text hover:text-brand-heading hover:bg-brand-border/30"
                   }`}
                   href={link.href}
+                  onClick={() => setIsOpen(false)}
                 >
                   {link.name}
                 </motion.a>

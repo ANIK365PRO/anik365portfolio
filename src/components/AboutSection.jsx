@@ -16,23 +16,19 @@ export function AboutSection() {
   useAntigravity([avatarRef, stat1Ref, stat2Ref, stat3Ref, textBlobRef]);
 
   return (
-    <div className="relative z-10 perspective-1000 overflow-hidden" id="about">
-      {/* Atmospheric Background Orbs */}
-      <div className="atm-orb orb-primary"></div>
-      <div className="atm-orb orb-secondary"></div>
-      <div className="atm-orb orb-accent"></div>
+    <section className="w-full relative overflow-hidden py-16 lg:py-24 transition-colors duration-300 z-10 perspective-1000" id="about">
 
-      <section className="max-w-container-max mx-auto px-6 md:pl-[120px] md:pr-10 lg:pl-[140px] lg:pr-20 py-24 lg:py-32 relative">
+      <div className="max-w-[1280px] mx-auto w-full px-6 md:pl-[120px] md:pr-10 lg:pl-[140px] lg:pr-20 relative">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center md:text-left mb-16 plx-layer-1"
+          className="text-center mb-16 plx-layer-1 flex flex-col items-center"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display-xl font-bold text-brand-heading mb-6 tracking-wide drop-shadow-sm dark:drop-shadow-2xl">
             Discover Me
           </h2>
-          <div className="h-1.5 w-24 mx-auto md:mx-0 bg-gradient-to-r from-brand-primary to-transparent rounded-full opacity-70"></div>
+          <div className="h-1.5 w-24 mx-auto bg-gradient-to-r from-brand-primary to-transparent rounded-full opacity-70"></div>
         </motion.div>
 
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center justify-center">
@@ -123,7 +119,7 @@ export function AboutSection() {
             </motion.div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }
