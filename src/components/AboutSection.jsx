@@ -40,7 +40,7 @@ export function AboutSection() {
                 <Image
                   alt="Anik Mohanta Profile"
                   className="w-full h-full object-cover scale-110"
-                  src="/profile.jpg"
+                  src="/anik_About.jpg"
                   width={320}
                   height={320}
                 />
@@ -60,7 +60,7 @@ export function AboutSection() {
                 className="fluid-blob rounded-[30%_70%_70%_30%/30%_30%_70%_70%] p-8 w-40 h-40 flex flex-col items-center justify-center text-center"
               >
                 <Sparkles className="text-brand-primary dark:text-[#a0c9ff] w-8 h-8 mb-2 drop-shadow-md" />
-                <span className="text-2xl font-bold text-brand-heading drop-shadow-sm">3+</span>
+                <span className="text-2xl font-bold text-brand-heading drop-shadow-sm">1+</span>
                 <span className="text-xs text-brand-text font-semibold tracking-wider">YEARS</span>
               </motion.div>
               <motion.div 
@@ -72,7 +72,7 @@ export function AboutSection() {
                 className="fluid-blob rounded-[50%_50%_20%_80%/25%_80%_20%_75%] p-8 w-44 h-44 flex flex-col items-center justify-center text-center mt-8 lg:mt-0"
               >
                 <Rocket className="text-brand-primary dark:text-[#97cbff] w-8 h-8 mb-2 drop-shadow-md" />
-                <span className="text-2xl font-bold text-brand-heading drop-shadow-sm">150+</span>
+                <span className="text-2xl font-bold text-brand-heading drop-shadow-sm">66+</span>
                 <span className="text-xs text-brand-text font-semibold tracking-wider">PROJECTS</span>
               </motion.div>
               <motion.div 

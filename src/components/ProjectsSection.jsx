@@ -12,35 +12,63 @@ export function ProjectsSection() {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Project Card 1: GameHub */}
+         {/* Project Card 1: SkillSwap */}
           <div className="bg-brand-surface border border-brand-border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col h-full group">
             <div className="h-48 w-full relative overflow-hidden bg-brand-bg border-b border-brand-border">
-              <img 
-                alt="GameHub Preview" 
-                className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvMBvEjsrUpH_WP17fk8N3OW4EUKjWuerdbrqBXFybVliDBXGr2Al7pa6OIEEXf8Uzl3ecDR4-jRqmLQls0RUlO3mIL0xVBhRWt3H1Sp2NgR6FWC3tMxSS6CvKJ7J-FkEricdbU5XvoIQ3T_2v3xYoVJMP4qHyL_mKRyYdPpPzjxSh_zqV3i68uQSNgOXuvPKfpt6vH38koyoej6HBPwBfb6lW5pOjG-CUnfWPfqOX44FD1REfpII0"
+              <img
+                alt="SkillSwap Freelance Micro-Task Platform Preview"
+                className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
+                src="/images/skillswap-preview.png"
               />
             </div>
+
             <div className="p-6 flex flex-col flex-grow">
               <h3 className="font-['Hanken_Grotesk'] text-[24px] leading-[32px] font-semibold text-brand-heading mb-4">
-                GameHub: The Ultimate Livestreaming Platform
+                SkillSwap — Freelance Micro-Task Platform
               </h3>
-              <p className="font-['Manrope'] text-[16px] leading-[24px] text-brand-text mb-4 flex-grow">
-                This Twitch clone built with Next.js, Prisma, Tailwind, PostgreSQL, and TypeScript offers RTMP/WHIP streaming, real-time chat, viewer count, streamer dashboard, chat controls, and advanced search with SSR for speed.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-6">
-                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] leading-[16px] border border-brand-border">TypeScript</span>
-                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] leading-[16px] border border-brand-border">Next.js</span>
-                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] leading-[16px] border border-brand-border">Node.js</span>
-                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] leading-[16px] border border-brand-border">Socket.IO</span>
-                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] leading-[16px] border border-brand-border">RTMP/WHIP</span>
-                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] leading-[16px] border border-brand-border">PostgreSQL</span>
-              </div>
-              <div className="flex gap-4 mt-auto">
-                <button className="flex-1 flex items-center justify-center gap-2 py-2 px-4 rounded-lg bg-brand-accent text-[#0F172A] hover:opacity-90 transition-opacity font-['Hanken_Grotesk'] text-[14px] leading-[20px] font-semibold">
-                  <span className="material-symbols-outlined text-[18px]">info</span>Details
-                </button>
 
+              <p className="font-['Manrope'] text-[16px] leading-[24px] text-brand-text mb-4 flex-grow">
+                A full-stack freelance micro-task marketplace where clients can post
+                tasks and freelancers can discover jobs, submit proposals, manage
+                projects, and track their earnings.
+              </p>
+
+              <div className="flex flex-wrap gap-2 mb-6">
+                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] border border-brand-border">
+                  Next.js
+                </span>
+
+                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] border border-brand-border">
+                  React
+                </span>
+
+                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] border border-brand-border">
+                  Node.js
+                </span>
+
+                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] border border-brand-border">
+                  MongoDB
+                </span>
+
+                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] border border-brand-border">
+                  Better Auth
+                </span>
+
+                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] border border-brand-border">
+                  Stripe
+                </span>
+              </div>
+
+              <div className="flex gap-4 mt-auto">
+                <a
+                  href="/projects/skillswap"
+                  className="flex-1 flex items-center justify-center gap-2 py-2 px-4 rounded-lg bg-brand-accent text-[#0F172A] hover:opacity-90 transition-opacity font-['Hanken_Grotesk'] text-[14px] font-semibold"
+                >
+                  <span className="material-symbols-outlined text-[18px]">
+                    info
+                  </span>
+                  Details
+                </a>
               </div>
             </div>
           </div>
@@ -69,11 +97,16 @@ export function ProjectsSection() {
                 <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] leading-[16px] border border-brand-border">Tailwind CSS</span>
                 <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] leading-[16px] border border-brand-border">Firebase</span>
               </div>
-              <div className="flex gap-4 mt-auto">
-                <button className="flex-1 flex items-center justify-center gap-2 py-2 px-4 rounded-lg bg-brand-accent text-[#0F172A] hover:opacity-90 transition-opacity font-['Hanken_Grotesk'] text-[14px] leading-[20px] font-semibold">
-                  <span className="material-symbols-outlined text-[18px]">info</span>Details
-                </button>
-
+               <div className="flex gap-4 mt-auto">
+                <a
+                  href="/projects/GoogleDocs2.0"
+                  className="flex-1 flex items-center justify-center gap-2 py-2 px-4 rounded-lg bg-brand-accent text-[#0F172A] hover:opacity-90 transition-opacity font-['Hanken_Grotesk'] text-[14px] font-semibold"
+                >
+                  <span className="material-symbols-outlined text-[18px]">
+                    info
+                  </span>
+                  Details
+                </a>
               </div>
             </div>
           </div>
@@ -102,11 +135,16 @@ export function ProjectsSection() {
                 <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] leading-[16px] border border-brand-border">Clerk</span>
                 <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] leading-[16px] border border-brand-border">Tailwind CSS</span>
               </div>
-              <div className="flex gap-4 mt-auto">
-                <button className="flex-1 flex items-center justify-center gap-2 py-2 px-4 rounded-lg bg-brand-accent text-[#0F172A] hover:opacity-90 transition-opacity font-['Hanken_Grotesk'] text-[14px] leading-[20px] font-semibold">
-                  <span className="material-symbols-outlined text-[18px]">info</span>Details
-                </button>
-
+               <div className="flex gap-4 mt-auto">
+                <a
+                  href="/projects/GoogleDriveClone"
+                  className="flex-1 flex items-center justify-center gap-2 py-2 px-4 rounded-lg bg-brand-accent text-[#0F172A] hover:opacity-90 transition-opacity font-['Hanken_Grotesk'] text-[14px] font-semibold"
+                >
+                  <span className="material-symbols-outlined text-[18px]">
+                    info
+                  </span>
+                  Details
+                </a>
               </div>
             </div>
           </div>

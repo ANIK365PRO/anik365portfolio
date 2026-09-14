@@ -14,24 +14,24 @@ export function TechnologiesSection() {
           <div className="flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-10">
             {/* Tech Item: JavaScript */}
             <div className="flex flex-col items-center gap-4 w-24">
-              <div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-[#0a3156] border-2 border-[#ffc300]/50 shadow-[0_0_20px_rgba(255,195,0,0.25)] hover:shadow-[0_0_35px_rgba(255,195,0,0.6)] hover:border-[#ffc300] flex items-center justify-center hover:scale-110 transition-all duration-300">
-                <i className="fa-brands fa-js text-4xl text-yellow-400"></i>
+              <div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-[#0a3156] border-2 border-[#ffc300]/50 shadow-[0_0_20px_rgba(255,195,0,0.25)] hover:shadow-[0_0_35px_rgba(255,195,0,0.6)] hover:border-[#ffc300] flex items-center justify-center hover:scale-110 transition-all duration-300 overflow-hidden">
+                <i className="fa-brands fa-js  text-2xl md:text-4xl text-yellow-400"></i>
               </div>
               <span className="text-sm font-bold text-brand-text uppercase tracking-wider">JavaScript</span>
             </div>
 
-            {/* Tech Item: TypeScript */}
+            {/* Tech Item: TypeScript
             <div className="flex flex-col items-center gap-4 w-24">
               <div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-[#0a3156] border-2 border-[#ffc300]/50 shadow-[0_0_20px_rgba(255,195,0,0.25)] hover:shadow-[0_0_35px_rgba(255,195,0,0.6)] hover:border-[#ffc300] flex items-center justify-center hover:scale-110 transition-all duration-300">
                 <span className="text-blue-500 font-bold text-2xl leading-none block border-2 border-blue-500 px-1.5 pt-1.5 bg-white">TS</span>
               </div>
               <span className="text-sm font-bold text-brand-text uppercase tracking-wider">TypeScript</span>
-            </div>
+            </div> */}
 
             {/* Tech Item: React */}
             <div className="flex flex-col items-center gap-4 w-24">
               <div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-[#0a3156] border-2 border-[#ffc300]/50 shadow-[0_0_20px_rgba(255,195,0,0.25)] hover:shadow-[0_0_35px_rgba(255,195,0,0.6)] hover:border-[#ffc300] flex items-center justify-center hover:scale-110 transition-all duration-300">
-                <i className="fa-brands fa-react text-4xl text-cyan-400"></i>
+                <i className="fa-brands fa-react text-2xl md:text-4xl text-cyan-400"></i>
               </div>
               <span className="text-sm font-bold text-brand-text uppercase tracking-wider">React</span>
             </div>
@@ -41,7 +41,7 @@ export function TechnologiesSection() {
               <div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-[#0a3156] border-2 border-[#ffc300]/50 shadow-[0_0_20px_rgba(255,195,0,0.25)] hover:shadow-[0_0_35px_rgba(255,195,0,0.6)] hover:border-[#ffc300] flex items-center justify-center hover:scale-110 transition-all duration-300">
                 <div className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center bg-black relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent"></div>
-                  <span className="text-white font-bold text-lg relative z-10">N</span>
+                  <span className="text-white font-bold text-2xl md:text-4xl relative z-10">N</span>
                 </div>
               </div>
               <span className="text-sm font-bold text-brand-text uppercase tracking-wider">Next.js</span>
@@ -50,7 +50,7 @@ export function TechnologiesSection() {
             {/* Tech Item: Node.js */}
             <div className="flex flex-col items-center gap-4 w-24">
               <div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-[#0a3156] border-2 border-[#ffc300]/50 shadow-[0_0_20px_rgba(255,195,0,0.25)] hover:shadow-[0_0_35px_rgba(255,195,0,0.6)] hover:border-[#ffc300] flex items-center justify-center hover:scale-110 transition-all duration-300">
-                <i className="fa-brands fa-node-js text-4xl text-green-500"></i>
+                <i className="fa-brands fa-node-js text-2xl md:text-4xl text-green-500"></i>
               </div>
               <span className="text-sm font-bold text-brand-text uppercase tracking-wider">Node.js</span>
             </div>
@@ -66,7 +66,7 @@ export function TechnologiesSection() {
             {/* Tech Item: NestJS */}
             <div className="flex flex-col items-center gap-4 w-24">
               <div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-[#0a3156] border-2 border-[#ffc300]/50 shadow-[0_0_20px_rgba(255,195,0,0.25)] hover:shadow-[0_0_35px_rgba(255,195,0,0.6)] hover:border-[#ffc300] flex items-center justify-center hover:scale-110 transition-all duration-300">
-                <i className="fa-solid fa-cat text-4xl text-red-500"></i>
+                <i className="fa-solid fa-cat text-2xl md:text-4xl text-red-500"></i>
               </div>
               <span className="text-sm font-bold text-brand-text uppercase tracking-wider">NestJS</span>
             </div>
@@ -74,7 +74,7 @@ export function TechnologiesSection() {
             {/* Tech Item: MongoDB */}
             <div className="flex flex-col items-center gap-4 w-24">
               <div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-[#0a3156] border-2 border-[#ffc300]/50 shadow-[0_0_20px_rgba(255,195,0,0.25)] hover:shadow-[0_0_35px_rgba(255,195,0,0.6)] hover:border-[#ffc300] flex items-center justify-center hover:scale-110 transition-all duration-300">
-                <i className="fa-brands fa-envira text-4xl text-green-600"></i>
+                <i className="fa-brands fa-envira text-2xl md:text-4xl text-green-600"></i>
               </div>
               <span className="text-sm font-bold text-brand-text uppercase tracking-wider">MongoDB</span>
             </div>
@@ -85,7 +85,7 @@ export function TechnologiesSection() {
             {/* Tech Item: PostgreSQL */}
             <div className="flex flex-col items-center gap-4 w-24">
               <div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-[#0a3156] border-2 border-[#ffc300]/50 shadow-[0_0_20px_rgba(255,195,0,0.25)] hover:shadow-[0_0_35px_rgba(255,195,0,0.6)] hover:border-[#ffc300] flex items-center justify-center hover:scale-110 transition-all duration-300">
-                <i className="fa-solid fa-database text-4xl text-blue-400"></i>
+                <i className="fa-solid fa-database text-2xl md:text-4xl text-blue-400"></i>
               </div>
               <span className="text-sm font-bold text-brand-text uppercase tracking-wider">PostgreSQL</span>
             </div>
@@ -101,7 +101,7 @@ export function TechnologiesSection() {
             {/* Tech Item: Docker */}
             <div className="flex flex-col items-center gap-4 w-24">
               <div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-[#0a3156] border-2 border-[#ffc300]/50 shadow-[0_0_20px_rgba(255,195,0,0.25)] hover:shadow-[0_0_35px_rgba(255,195,0,0.6)] hover:border-[#ffc300] flex items-center justify-center hover:scale-110 transition-all duration-300">
-                <i className="fa-brands fa-docker text-4xl text-blue-500"></i>
+                <i className="fa-brands fa-docker text-2xl md:text-4xl text-blue-500"></i>
               </div>
               <span className="text-sm font-bold text-brand-text uppercase tracking-wider">Docker</span>
             </div>
@@ -109,7 +109,7 @@ export function TechnologiesSection() {
             {/* Tech Item: Kubernetes */}
             <div className="flex flex-col items-center gap-4 w-24">
               <div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-[#0a3156] border-2 border-[#ffc300]/50 shadow-[0_0_20px_rgba(255,195,0,0.25)] hover:shadow-[0_0_35px_rgba(255,195,0,0.6)] hover:border-[#ffc300] flex items-center justify-center hover:scale-110 transition-all duration-300">
-                <i className="fa-solid fa-dharmachakra text-4xl text-blue-500"></i>
+                <i className="fa-solid fa-dharmachakra text-2xl md:text-4xl text-blue-500"></i>
               </div>
               <span className="text-sm font-bold text-brand-text uppercase tracking-wider">Kubernetes</span>
             </div>
@@ -125,7 +125,7 @@ export function TechnologiesSection() {
             {/* Tech Item: Git */}
             <div className="flex flex-col items-center gap-4 w-24">
               <div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-[#0a3156] border-2 border-[#ffc300]/50 shadow-[0_0_20px_rgba(255,195,0,0.25)] hover:shadow-[0_0_35px_rgba(255,195,0,0.6)] hover:border-[#ffc300] flex items-center justify-center hover:scale-110 transition-all duration-300">
-                <i className="fa-brands fa-git-alt text-4xl text-orange-500"></i>
+                <i className="fa-brands fa-git-alt text-2xl md:text-4xl text-orange-500"></i>
               </div>
               <span className="text-sm font-bold text-brand-text uppercase tracking-wider">Git</span>
             </div>
@@ -133,7 +133,7 @@ export function TechnologiesSection() {
             {/* Tech Item: AWS */}
             <div className="flex flex-col items-center gap-4 w-24">
               <div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-[#0a3156] border-2 border-[#ffc300]/50 shadow-[0_0_20px_rgba(255,195,0,0.25)] hover:shadow-[0_0_35px_rgba(255,195,0,0.6)] hover:border-[#ffc300] flex items-center justify-center hover:scale-110 transition-all duration-300">
-                <i className="fa-brands fa-aws text-4xl text-orange-400"></i>
+                <i className="fa-brands fa-aws text-2xl md:text-4xl text-orange-400"></i>
               </div>
               <span className="text-sm font-bold text-brand-text uppercase tracking-wider">AWS</span>
             </div>

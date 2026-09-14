@@ -4,9 +4,10 @@ import { AboutSection } from "@/components/AboutSection";
 import { QualificationSection } from "@/components/QualificationSection";
 import { SkillsSection } from "@/components/SkillsSection";
 import { TechnologiesSection } from "@/components/TechnologiesSection";
-import { ProjectsSection } from "@/components/ProjectsSection";
+// import { ProjectsSection } from "@/components/ProjectsSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
+import ProjectPage from "./projects/page";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
       <SkillsSection />
 
       <QualificationSection />
-      <ProjectsSection />
+      <ProjectPage></ProjectPage>
       <ContactSection />
 
       <Footer />
