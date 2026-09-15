@@ -6,7 +6,7 @@ export function Footer() {
   };
 
   return (
-    <footer className="w-full bg-brand-surface/40 border-t-[6px] border-brand-border pt-20 pb-12 px-6 md:px-12 lg:px-24 transition-colors duration-300">
+    <footer id="footer" className="w-full bg-brand-surface/40 border-t-[6px] border-brand-border pt-20 pb-12 px-6 md:px-12 lg:px-24 transition-colors duration-300">
       <div className="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 mb-16">
         <div className="flex flex-col space-y-5">
           <div className="flex items-center gap-3">
@@ -33,16 +33,16 @@ export function Footer() {
             Connect With Me
           </h3>
           <div className="flex space-x-6">
-            <a aria-label="GitHub" className="text-brand-primary hover:text-brand-accent transition-all duration-300 hover:-translate-y-1" href="#">
+            <a aria-label="GitHub" className="text-brand-primary hover:text-brand-accent transition-all duration-300 hover:-translate-y-1" href="https://github.com/ANIK365PRO" target="_blank" rel="noopener noreferrer">
               <i className="fa-brands fa-github text-[1.35rem]"></i>
             </a>
-            <a aria-label="LinkedIn" className="text-brand-primary hover:text-brand-accent transition-all duration-300 hover:-translate-y-1" href="#">
+            <a aria-label="LinkedIn" className="text-brand-primary hover:text-brand-accent transition-all duration-300 hover:-translate-y-1" href="https://www.linkedin.com/in/anik-mohanta" target="_blank" rel="noopener noreferrer">
               <i className="fa-brands fa-linkedin text-[1.35rem]"></i>
             </a>
-            <a aria-label="Twitter X" className="text-brand-primary hover:text-brand-accent transition-all duration-300 hover:-translate-y-1" href="#">
+            {/* <a aria-label="Twitter X" className="text-brand-primary hover:text-brand-accent transition-all duration-300 hover:-translate-y-1" href="#">
               <i className="fa-brands fa-x-twitter text-[1.35rem]"></i>
-            </a>
-            <a aria-label="Email" className="text-brand-primary hover:text-brand-accent transition-all duration-300 hover:-translate-y-1" href="mailto:contact@nuradnan.com">
+            </a> */}
+            <a aria-label="Email" className="text-brand-primary hover:text-brand-accent transition-all duration-300 hover:-translate-y-1" href="mailto:anikmohanta75@gmail.com" target="_blank" rel="noopener noreferrer">
               <i className="fa-solid fa-envelope text-[1.35rem]"></i>
             </a>
           </div>

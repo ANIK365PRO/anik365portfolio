@@ -26,6 +26,23 @@ import { useOrbitalAnimation } from "@/hooks/useOrbitalAnimation";
 
 export function HeroSection() {
   const { containerRef, card1Ref, card2Ref, card3Ref } = useOrbitalAnimation();
+  const [isSidebarVisible, setIsSidebarVisible] = useState(true);
+
+  useEffect(() => {
+    const footerElement = document.getElementById("footer");
+    if (!footerElement) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsSidebarVisible(!entry.isIntersecting);
+      },
+      { rootMargin: "100px", threshold: 0 }
+    );
+
+    observer.observe(footerElement);
+
+    return () => observer.disconnect();
+  }, []);
 
   // Framer Motion variants for left content
   const containerVariants = {
@@ -49,13 +66,14 @@ export function HeroSection() {
       {/* SideNavBar (Desktop Only) */}
       <motion.aside
         initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.6, delay: 0.5 }}
+        animate={{ opacity: isSidebarVisible ? 1 : 0, x: isSidebarVisible ? 0 : -50 }}
+        transition={{ duration: 0.4 }}
+        style={{ pointerEvents: isSidebarVisible ? "auto" : "none" }}
         className="hidden md:flex flex-col items-center py-8 gap-y-6 fixed left-8 top-1/2 -translate-y-1/2 rounded-full w-16 bg-brand-surface/40 backdrop-blur-xl border border-brand-border/50 shadow-xl z-40"
       >
-        <SocialLink icon={<LinkedinIcon className="w-5 h-5" />} label="LinkedIn" />
-        <SocialLink icon={<GithubIcon className="w-5 h-5" />} label="GitHub" />
-        <i className="fa-solid fa-envelope text-[1.35rem]"></i>
+        <SocialLink icon={<LinkedinIcon className="w-5 h-5" />} label="LinkedIn" href="https://www.linkedin.com/in/anik-mohanta" />
+        <SocialLink icon={<GithubIcon className="w-5 h-5" />} label="GitHub" href="https://github.com/ANIK365PRO" />
+        <SocialLink icon={<i className="fa-solid fa-envelope text-[1.35rem]"></i>} label="Email" href="mailto:anikmohanta75@gmail.com" />
         {/* <SocialLink icon={<Globe className="w-5 h-5" />} label="Web" /> */}
         {/* <SocialLink icon={<Share2 className="w-5 h-5" />} label="Share" /> */}
       </motion.aside>
@@ -326,14 +344,20 @@ export function HeroSection() {
         <SocialLinkMobile
           icon={<GithubIcon className="w-5 h-5 sm:w-6 sm:h-6" />}
           label="GitHub"
+          href="https://github.com/ANIK365PRO"
         />
 
         <SocialLinkMobile
           icon={<LinkedinIcon className="w-5 h-5 sm:w-6 sm:h-6" />}
           label="LinkedIn"
+          href="https://www.linkedin.com/in/anik-mohanta"
         />
 
-        <i className="fa-solid fa-envelope text-[1.25rem] sm:text-[1.35rem]" />
+        <SocialLinkMobile
+          icon={<i className="fa-solid fa-envelope text-[1.25rem] sm:text-[1.35rem]" />}
+          label="Email"
+          href="mailto:anikmohanta75@gmail.com"
+        />
       </motion.div>
     </motion.div>
 
@@ -503,10 +527,10 @@ export function HeroSection() {
             icon={
               <Briefcase className="w-4 h-4 text-brand-primary" />
             }
-            value="1"
+            value="1+"
             label={
               <>
-                Year of
+                Years
                 <br />
                 Experience
               </>
@@ -523,7 +547,7 @@ export function HeroSection() {
             icon={
               <CircleCheck className="w-4 h-4 text-green-500" />
             }
-            value="66"
+            value="10+"
             label={
               <>
                 Finished
@@ -681,28 +705,32 @@ export function HeroSection() {
 }
 
 // Sub-components
-function SocialLink({ icon, label }) {
+function SocialLink({ icon, label, href }) {
   return (
     <motion.a
       aria-label={label}
       whileHover={{ scale: 1.15 }}
       whileTap={{ scale: 0.95 }}
       className="text-brand-text hover:text-brand-accent p-3 hover:bg-brand-border/50 transition-colors duration-300 rounded-full flex items-center justify-center"
-      href="#"
+      href={href || "#"}
+      target="_blank"
+      rel="noopener noreferrer"
     >
       {icon}
     </motion.a>
   );
 }
 
-function SocialLinkMobile({ icon, label }) {
+function SocialLinkMobile({ icon, label, href }) {
   return (
     <motion.a
       aria-label={label}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
       className="w-12 h-12 flex items-center justify-center rounded-full bg-brand-border/30 text-brand-text hover:bg-brand-primary hover:text-white transition-all duration-300 shadow-md"
-      href="#"
+      href={href || "#"}
+      target="_blank"
+      rel="noopener noreferrer"
     >
       {icon}
     </motion.a>

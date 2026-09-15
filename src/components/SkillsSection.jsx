@@ -53,14 +53,7 @@ export function SkillsSection() {
                     <span className="text-xs font-medium text-brand-text">Expert</span>
                   </div>
                 </div>
-                {/* Skill Item */}
-                <div className="flex items-start gap-3">
-                  <BadgeCheck className="text-brand-accent w-5 h-5 mt-1 opacity-90 flex-shrink-0" />
-                  <div>
-                    <h4 className="text-base font-bold text-brand-heading">TypeScript</h4>
-                    <span className="text-xs font-medium text-brand-text">Expert</span>
-                  </div>
-                </div>
+               
                 {/* Skill Item */}
                 <div className="flex items-start gap-3">
                   <BadgeCheck className="text-brand-accent w-5 h-5 mt-1 opacity-90 flex-shrink-0" />
@@ -77,6 +70,16 @@ export function SkillsSection() {
                     <span className="text-xs font-medium text-brand-text">Expert</span>
                   </div>
                 </div>
+
+                 {/* Skill Item */}
+                <div className="flex items-start gap-3">
+                  <BadgeCheck className="text-brand-accent w-5 h-5 mt-1 opacity-90 flex-shrink-0" />
+                  <div>
+                    <h4 className="text-base font-bold text-brand-heading">TypeScript</h4>
+                    <span className="text-xs font-medium text-brand-text">Intermediate</span>
+                  </div>
+                </div>
+
                 {/* Skill Item */}
                 <div className="flex items-start gap-3">
                   <BadgeCheck className="text-brand-accent w-5 h-5 mt-1 opacity-90 flex-shrink-0" />
@@ -124,29 +127,34 @@ export function SkillsSection() {
                   </div>
                 </div>
                 {/* Skill Item */}
-                <div className="flex items-start gap-3">
+                {/* <div className="flex items-start gap-3">
                   <BadgeCheck className="text-brand-accent w-5 h-5 mt-1 opacity-90 flex-shrink-0" />
                   <div>
                     <h4 className="text-base font-bold text-brand-heading">SQL</h4>
                     <span className="text-xs font-medium text-brand-text">Intermediate</span>
                   </div>
-                </div>
+                </div> */}
+
+
                 {/* Skill Item */}
-                <div className="flex items-start gap-3">
+                {/* <div className="flex items-start gap-3">
                   <BadgeCheck className="text-brand-accent w-5 h-5 mt-1 opacity-90 flex-shrink-0" />
                   <div>
                     <h4 className="text-base font-bold text-brand-heading">Docker</h4>
                     <span className="text-xs font-medium text-brand-text">Intermediate</span>
                   </div>
-                </div>
+                </div> */}
+
+
                 {/* Skill Item */}
-                <div className="flex items-start gap-3">
+                {/* <div className="flex items-start gap-3">
                   <BadgeCheck className="text-brand-accent w-5 h-5 mt-1 opacity-90 flex-shrink-0" />
                   <div>
                     <h4 className="text-base font-bold text-brand-heading">Kubernetes</h4>
                     <span className="text-xs font-medium text-brand-text">Intermediate</span>
                   </div>
-                </div>
+                </div> */}
+
               </div>
             </div>
           </div>
@@ -170,29 +178,32 @@ export function SkillsSection() {
                   </div>
                 </div>
                 {/* Skill Item */}
-                <div className="flex items-start gap-3">
+                {/* <div className="flex items-start gap-3">
                   <BadgeCheck className="text-brand-accent w-5 h-5 mt-1 opacity-90 flex-shrink-0" />
                   <div>
                     <h4 className="text-base font-bold text-brand-heading">AWS</h4>
                     <span className="text-xs font-medium text-brand-text">Intermediate</span>
                   </div>
-                </div>
+                </div> */}
+
                 {/* Skill Item */}
-                <div className="flex items-start gap-3">
+                {/* <div className="flex items-start gap-3">
                   <BadgeCheck className="text-brand-accent w-5 h-5 mt-1 opacity-90 flex-shrink-0" />
                   <div>
                     <h4 className="text-base font-bold text-brand-heading">Prisma</h4>
                     <span className="text-xs font-medium text-brand-text">Intermediate</span>
                   </div>
-                </div>
+                </div> */}
+
                 {/* Skill Item */}
-                <div className="flex items-start gap-3">
+                {/* <div className="flex items-start gap-3">
                   <BadgeCheck className="text-brand-accent w-5 h-5 mt-1 opacity-90 flex-shrink-0" />
                   <div>
                     <h4 className="text-base font-bold text-brand-heading">PostgreSQL</h4>
                     <span className="text-xs font-medium text-brand-text">Intermediate</span>
                   </div>
-                </div>
+                </div> */}
+
               </div>
             </div>
           </div>

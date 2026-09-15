@@ -5,7 +5,7 @@ export function TechnologiesSection() {
         {/* Section Header */}
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-heading mb-4 uppercase tracking-tight">Technologies</h2>
-          <p className="text-lg md:text-xl text-brand-accent font-bold uppercase tracking-widest">My Tech Stack</p>
+          <p className="text-lg md:text-xl font-bold uppercase tracking-widest">My Tech Stack</p>
         </div>
 
         {/* Technologies Grid container */}
@@ -63,13 +63,15 @@ export function TechnologiesSection() {
               <span className="text-sm font-bold text-brand-text uppercase tracking-wider">Express</span>
             </div>
 
-            {/* Tech Item: NestJS */}
-            <div className="flex flex-col items-center gap-4 w-24">
-              <div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-[#0a3156] border-2 border-[#ffc300]/50 shadow-[0_0_20px_rgba(255,195,0,0.25)] hover:shadow-[0_0_35px_rgba(255,195,0,0.6)] hover:border-[#ffc300] flex items-center justify-center hover:scale-110 transition-all duration-300">
-                <i className="fa-solid fa-cat text-2xl md:text-4xl text-red-500"></i>
-              </div>
-              <span className="text-sm font-bold text-brand-text uppercase tracking-wider">NestJS</span>
-            </div>
+           
+
+            
+          </div>
+
+          {/* Second Row */}
+          <div className="flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-10">
+
+
 
             {/* Tech Item: MongoDB */}
             <div className="flex flex-col items-center gap-4 w-24">
@@ -77,41 +79,6 @@ export function TechnologiesSection() {
                 <i className="fa-brands fa-envira text-2xl md:text-4xl text-green-600"></i>
               </div>
               <span className="text-sm font-bold text-brand-text uppercase tracking-wider">MongoDB</span>
-            </div>
-          </div>
-
-          {/* Second Row */}
-          <div className="flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-10">
-            {/* Tech Item: PostgreSQL */}
-            <div className="flex flex-col items-center gap-4 w-24">
-              <div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-[#0a3156] border-2 border-[#ffc300]/50 shadow-[0_0_20px_rgba(255,195,0,0.25)] hover:shadow-[0_0_35px_rgba(255,195,0,0.6)] hover:border-[#ffc300] flex items-center justify-center hover:scale-110 transition-all duration-300">
-                <i className="fa-solid fa-database text-2xl md:text-4xl text-blue-400"></i>
-              </div>
-              <span className="text-sm font-bold text-brand-text uppercase tracking-wider">PostgreSQL</span>
-            </div>
-
-            {/* Tech Item: Prisma */}
-            <div className="flex flex-col items-center gap-4 w-24">
-              <div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-[#0a3156] border-2 border-[#ffc300]/50 shadow-[0_0_20px_rgba(255,195,0,0.25)] hover:shadow-[0_0_35px_rgba(255,195,0,0.6)] hover:border-[#ffc300] flex items-center justify-center hover:scale-110 transition-all duration-300">
-                <svg className="text-white" fill="none" height="32" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" width="32"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path></svg>
-              </div>
-              <span className="text-sm font-bold text-brand-text uppercase tracking-wider">Prisma</span>
-            </div>
-
-            {/* Tech Item: Docker */}
-            <div className="flex flex-col items-center gap-4 w-24">
-              <div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-[#0a3156] border-2 border-[#ffc300]/50 shadow-[0_0_20px_rgba(255,195,0,0.25)] hover:shadow-[0_0_35px_rgba(255,195,0,0.6)] hover:border-[#ffc300] flex items-center justify-center hover:scale-110 transition-all duration-300">
-                <i className="fa-brands fa-docker text-2xl md:text-4xl text-blue-500"></i>
-              </div>
-              <span className="text-sm font-bold text-brand-text uppercase tracking-wider">Docker</span>
-            </div>
-
-            {/* Tech Item: Kubernetes */}
-            <div className="flex flex-col items-center gap-4 w-24">
-              <div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-[#0a3156] border-2 border-[#ffc300]/50 shadow-[0_0_20px_rgba(255,195,0,0.25)] hover:shadow-[0_0_35px_rgba(255,195,0,0.6)] hover:border-[#ffc300] flex items-center justify-center hover:scale-110 transition-all duration-300">
-                <i className="fa-solid fa-dharmachakra text-2xl md:text-4xl text-blue-500"></i>
-              </div>
-              <span className="text-sm font-bold text-brand-text uppercase tracking-wider">Kubernetes</span>
             </div>
 
             {/* Tech Item: Tailwind CSS */}
@@ -130,13 +97,56 @@ export function TechnologiesSection() {
               <span className="text-sm font-bold text-brand-text uppercase tracking-wider">Git</span>
             </div>
 
+
+             {/* Tech Item: NestJS */}
+            {/* <div className="flex flex-col items-center gap-4 w-24">
+              <div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-[#0a3156] border-2 border-[#ffc300]/50 shadow-[0_0_20px_rgba(255,195,0,0.25)] hover:shadow-[0_0_35px_rgba(255,195,0,0.6)] hover:border-[#ffc300] flex items-center justify-center hover:scale-110 transition-all duration-300">
+                <i className="fa-solid fa-cat text-2xl md:text-4xl text-red-500"></i>
+              </div>
+              <span className="text-sm font-bold text-brand-text uppercase tracking-wider">NestJS</span>
+            </div> */}
+
+            {/* Tech Item: PostgreSQL */}
+            {/* <div className="flex flex-col items-center gap-4 w-24">
+              <div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-[#0a3156] border-2 border-[#ffc300]/50 shadow-[0_0_20px_rgba(255,195,0,0.25)] hover:shadow-[0_0_35px_rgba(255,195,0,0.6)] hover:border-[#ffc300] flex items-center justify-center hover:scale-110 transition-all duration-300">
+                <i className="fa-solid fa-database text-2xl md:text-4xl text-blue-400"></i>
+              </div>
+              <span className="text-sm font-bold text-brand-text uppercase tracking-wider">PostgreSQL</span>
+            </div> */}
+
+            {/* Tech Item: Prisma */}
+            {/* <div className="flex flex-col items-center gap-4 w-24">
+              <div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-[#0a3156] border-2 border-[#ffc300]/50 shadow-[0_0_20px_rgba(255,195,0,0.25)] hover:shadow-[0_0_35px_rgba(255,195,0,0.6)] hover:border-[#ffc300] flex items-center justify-center hover:scale-110 transition-all duration-300">
+                <svg className="text-white" fill="none" height="32" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" width="32"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path></svg>
+              </div>
+              <span className="text-sm font-bold text-brand-text uppercase tracking-wider">Prisma</span>
+            </div> */}
+
+            {/* Tech Item: Docker */}
+            {/* <div className="flex flex-col items-center gap-4 w-24">
+              <div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-[#0a3156] border-2 border-[#ffc300]/50 shadow-[0_0_20px_rgba(255,195,0,0.25)] hover:shadow-[0_0_35px_rgba(255,195,0,0.6)] hover:border-[#ffc300] flex items-center justify-center hover:scale-110 transition-all duration-300">
+                <i className="fa-brands fa-docker text-2xl md:text-4xl text-blue-500"></i>
+              </div>
+              <span className="text-sm font-bold text-brand-text uppercase tracking-wider">Docker</span>
+            </div> */}
+
+            {/* Tech Item: Kubernetes */}
+            {/* <div className="flex flex-col items-center gap-4 w-24">
+              <div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-[#0a3156] border-2 border-[#ffc300]/50 shadow-[0_0_20px_rgba(255,195,0,0.25)] hover:shadow-[0_0_35px_rgba(255,195,0,0.6)] hover:border-[#ffc300] flex items-center justify-center hover:scale-110 transition-all duration-300">
+                <i className="fa-solid fa-dharmachakra text-2xl md:text-4xl text-blue-500"></i>
+              </div>
+              <span className="text-sm font-bold text-brand-text uppercase tracking-wider">Kubernetes</span>
+            </div> */}
+
+           
+
             {/* Tech Item: AWS */}
-            <div className="flex flex-col items-center gap-4 w-24">
+            {/* <div className="flex flex-col items-center gap-4 w-24">
               <div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-[#0a3156] border-2 border-[#ffc300]/50 shadow-[0_0_20px_rgba(255,195,0,0.25)] hover:shadow-[0_0_35px_rgba(255,195,0,0.6)] hover:border-[#ffc300] flex items-center justify-center hover:scale-110 transition-all duration-300">
                 <i className="fa-brands fa-aws text-2xl md:text-4xl text-orange-400"></i>
               </div>
               <span className="text-sm font-bold text-brand-text uppercase tracking-wider">AWS</span>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

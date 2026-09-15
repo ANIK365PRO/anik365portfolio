@@ -61,7 +61,7 @@ export function AboutSection() {
               >
                 <Sparkles className="text-brand-primary dark:text-[#a0c9ff] w-8 h-8 mb-2 drop-shadow-md" />
                 <span className="text-2xl font-bold text-brand-heading drop-shadow-sm">1+</span>
-                <span className="text-xs text-brand-text font-semibold tracking-wider">YEARS</span>
+                <span className="text-xs text-brand-text font-semibold tracking-wider"> Years Experience </span>
               </motion.div>
               <motion.div 
                 ref={stat2Ref}
@@ -72,8 +72,8 @@ export function AboutSection() {
                 className="fluid-blob rounded-[50%_50%_20%_80%/25%_80%_20%_75%] p-8 w-44 h-44 flex flex-col items-center justify-center text-center mt-8 lg:mt-0"
               >
                 <Rocket className="text-brand-primary dark:text-[#97cbff] w-8 h-8 mb-2 drop-shadow-md" />
-                <span className="text-2xl font-bold text-brand-heading drop-shadow-sm">66+</span>
-                <span className="text-xs text-brand-text font-semibold tracking-wider">PROJECTS</span>
+                <span className="text-2xl font-bold text-brand-heading drop-shadow-sm">10+</span>
+                <span className="text-xs text-brand-text font-semibold tracking-wider">Real-world Projects</span>
               </motion.div>
               <motion.div 
                 ref={stat3Ref}
@@ -84,8 +84,8 @@ export function AboutSection() {
                 className="fluid-blob rounded-[60%_40%_30%_70%/60%_30%_70%_40%] p-8 w-36 h-36 flex flex-col items-center justify-center text-center -mt-4 lg:mt-12"
               >
                 <Headset className="text-brand-accent w-8 h-8 mb-2 drop-shadow-md" />
-                <span className="text-xl font-bold text-brand-heading drop-shadow-sm">24/7</span>
-                <span className="text-xs text-brand-text font-semibold tracking-wider">SUPPORT</span>
+                <span className="text-xl font-bold text-brand-heading drop-shadow-sm">15+</span>
+                <span className="text-xs text-brand-text font-semibold tracking-wider">Technologies Used</span>
               </motion.div>
             </div>
 
@@ -98,7 +98,10 @@ export function AboutSection() {
               className="fluid-blob rounded-[40%_60%_70%_30%/40%_50%_60%_50%] p-10 md:p-14 mb-10 relative z-10 plx-layer-1"
             >
               <p className="text-brand-text leading-relaxed text-body-lg font-body-lg drop-shadow-sm">
-                My programming journey started with a curiosity for how things work, leading me from simple scripts to building complex, scalable applications. I thrive on the challenge of backend logic and the polish of a seamless frontend. When I'm not at my keyboard, you'll likely find me hiking in the mountains or lost in a canvas—I find that painting and nature provide the perfect creative reset for my technical work.
+               I'm a Full-Stack Developer who loves building modern, scalable web applications using the MERN stack and Next.js. I handle everything from pixel-perfect frontend UIs to secure backend databases. 
+               <br></br>
+                <br></br>
+                Recently, I built DriveFleet, a full-stack car rental platform, and SkillSwap, a freelance marketplace with Stripe integration. I thrive on writing clean code, solving complex problems, and am currently diving deeply into TypeScript to level up my backend architecture skills!
               </p>
             </motion.div>
 
