@@ -111,14 +111,17 @@ export function AboutSection() {
               viewport={{ once: true }}
               className="text-center md:text-left plx-layer-2"
             >
-              <motion.button 
+              <motion.a 
+                href="https://drive.google.com/uc?export=download&id=1SUKt-z1BTHvUZqgZbEvtjjmDy0-ZYGYM"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="btn-fluid inline-flex items-center gap-3 text-white font-bold py-4 px-10"
               >
                 <span className="tracking-widest text-sm uppercase drop-shadow-md">Get Resume</span>
                 <Download className="w-5 h-5 drop-shadow-md" />
-              </motion.button>
+              </motion.a>
             </motion.div>
           </div>
         </div>

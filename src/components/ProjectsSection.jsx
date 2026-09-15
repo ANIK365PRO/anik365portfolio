@@ -18,7 +18,7 @@ export function ProjectsSection() {
               <img
                 alt="SkillSwap Freelance Micro-Task Platform Preview"
                 className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
-                src="/images/skillswap-preview.png"
+                src="/images/skillswap-cover.png"
               />
             </div>
 
@@ -34,116 +34,140 @@ export function ProjectsSection() {
               </p>
 
               <div className="flex flex-wrap gap-2 mb-6">
-                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] border border-brand-border">
-                  Next.js
-                </span>
-
-                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] border border-brand-border">
-                  React
-                </span>
-
-                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] border border-brand-border">
-                  Node.js
-                </span>
-
-                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] border border-brand-border">
-                  MongoDB
-                </span>
-
-                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] border border-brand-border">
-                  Better Auth
-                </span>
-
-                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] border border-brand-border">
-                  Stripe
-                </span>
+                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] border border-brand-border">Next.js</span>
+                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] border border-brand-border">React</span>
+                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] border border-brand-border">Node.js</span>
+                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] border border-brand-border">MongoDB</span>
+                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] border border-brand-border">Better Auth</span>
+                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] border border-brand-border">Stripe</span>
               </div>
 
-              <div className="flex gap-4 mt-auto">
+              <div className="flex flex-wrap gap-2 mt-auto">
                 <a
-                  href="/projects/skillswap"
-                  className="flex-1 flex items-center justify-center gap-2 py-2 px-4 rounded-lg bg-brand-accent text-[#0F172A] hover:opacity-90 transition-opacity font-['Hanken_Grotesk'] text-[14px] font-semibold"
+                  href="https://skillswap-client-a10-m63.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 min-w-[100px] flex items-center justify-center gap-2 py-2 px-3 rounded-lg bg-brand-accent text-[#0F172A] hover:opacity-90 transition-opacity font-['Hanken_Grotesk'] text-[13px] font-semibold whitespace-nowrap"
                 >
-                  <span className="material-symbols-outlined text-[18px]">
-                    info
-                  </span>
-                  Details
+                  Live Demo
+                  <i className="fa-solid fa-arrow-up-right-from-square text-[13px]"></i>
+                </a>
+                <a
+                  href="https://github.com/ANIK365PRO/skillswap-client-a10-m63"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 min-w-[125px] flex items-center justify-center gap-1.5 py-2 px-2 rounded-lg bg-transparent border border-brand-border text-brand-text hover:border-brand-primary hover:text-brand-primary transition-colors font-['Hanken_Grotesk'] text-[12px] font-semibold whitespace-nowrap"
+                >
+                  <i className="fa-brands fa-github text-[14px]"></i>
+                  GitHub (Client)
+                </a>
+                <a
+                  href="https://github.com/ANIK365PRO/skillswap-server-a10-m63"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 min-w-[125px] flex items-center justify-center gap-1.5 py-2 px-2 rounded-lg bg-transparent border border-brand-border text-brand-text hover:border-brand-primary hover:text-brand-primary transition-colors font-['Hanken_Grotesk'] text-[12px] font-semibold whitespace-nowrap"
+                >
+                  <i className="fa-brands fa-github text-[14px]"></i>
+                  GitHub (Server)
                 </a>
               </div>
             </div>
           </div>
 
-          {/* Project Card 2: Google Docs 2.0 */}
+          {/* Project Card 2: DriveFleet */}
           <div className="bg-brand-surface border border-brand-border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col h-full group">
             <div className="h-48 w-full relative overflow-hidden bg-brand-bg border-b border-brand-border">
               <img 
-                alt="Google Docs 2.0 Preview" 
+                alt="DriveFleet Preview" 
                 className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY9c-IfZ68VjoeqB1iBebxZqwmpQn1eXUsrnUO2XbXn2SBnpURNjYXpi18Wy9aHgWJHvjPsN1m4AcCKMyx8TJgDD7-ySQDuYICd7ufvEuOfL2FsYHXRY7dChX4H7f1ds2GDaItrvmiTJeustDCGAEteeK4cPSay3SoS71vTobYdaDf1gif4tiktKGD0lBc7gPcjEH7KTIPDb0bnjFsy5HKXWqTQNX2B3RqMbvN4V_hCzurVCxXQY9i"
+                src="/images/drivefleet-cover.png"
               />
             </div>
             <div className="p-6 flex flex-col flex-grow">
               <h3 className="font-['Hanken_Grotesk'] text-[24px] leading-[32px] font-semibold text-brand-heading mb-4">
-                Google Docs 2.0: Next-Gen Real-Time Collaboration
+                DriveFleet — Car Rental Platform
               </h3>
               <p className="font-['Manrope'] text-[16px] leading-[24px] text-brand-text mb-4 flex-grow">
-                Google Docs Clone is a full-stack app built with Next.js 15, Shadcn UI, and Tailwind CSS, offering real-time editing, collaboration, comments, mentions, notifications, customizable templates, secure auth, and export options.
+                A comprehensive full-stack car rental application featuring secure authentication, booking workflows, and a responsive UI.
               </p>
               <div className="flex flex-wrap gap-2 mb-6">
-                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] leading-[16px] border border-brand-border">TypeScript</span>
                 <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] leading-[16px] border border-brand-border">Next.js</span>
-                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] leading-[16px] border border-brand-border">Node.js</span>
-                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] leading-[16px] border border-brand-border">TipTap</span>
+                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] leading-[16px] border border-brand-border">Express.js</span>
+                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] leading-[16px] border border-brand-border">MongoDB</span>
                 <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] leading-[16px] border border-brand-border">Tailwind CSS</span>
-                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] leading-[16px] border border-brand-border">Firebase</span>
               </div>
-               <div className="flex gap-4 mt-auto">
+              <div className="flex flex-wrap gap-2 mt-auto">
                 <a
-                  href="/projects/GoogleDocs2.0"
-                  className="flex-1 flex items-center justify-center gap-2 py-2 px-4 rounded-lg bg-brand-accent text-[#0F172A] hover:opacity-90 transition-opacity font-['Hanken_Grotesk'] text-[14px] font-semibold"
+                  href="https://drivefleet-a9-m55.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 min-w-[100px] flex items-center justify-center gap-2 py-2 px-3 rounded-lg bg-brand-accent text-[#0F172A] hover:opacity-90 transition-opacity font-['Hanken_Grotesk'] text-[13px] font-semibold whitespace-nowrap"
                 >
-                  <span className="material-symbols-outlined text-[18px]">
-                    info
-                  </span>
-                  Details
+                  Live Demo
+                  <i className="fa-solid fa-arrow-up-right-from-square text-[13px]"></i>
+                </a>
+                <a
+                  href="https://github.com/ANIK365PRO/DriveFleet-a9-m55"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 min-w-[125px] flex items-center justify-center gap-1.5 py-2 px-2 rounded-lg bg-transparent border border-brand-border text-brand-text hover:border-brand-primary hover:text-brand-primary transition-colors font-['Hanken_Grotesk'] text-[12px] font-semibold whitespace-nowrap"
+                >
+                  <i className="fa-brands fa-github text-[14px]"></i>
+                  GitHub (Client)
+                </a>
+                <a
+                  href="https://github.com/ANIK365PRO/DriveFleet-server-a9-m55"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 min-w-[125px] flex items-center justify-center gap-1.5 py-2 px-2 rounded-lg bg-transparent border border-brand-border text-brand-text hover:border-brand-primary hover:text-brand-primary transition-colors font-['Hanken_Grotesk'] text-[12px] font-semibold whitespace-nowrap"
+                >
+                  <i className="fa-brands fa-github text-[14px]"></i>
+                  GitHub (Server)
                 </a>
               </div>
             </div>
           </div>
 
-          {/* Project Card 3: Google Drive Clone */}
+          {/* Project Card 3: Tiles Gallery */}
           <div className="bg-brand-surface border border-brand-border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col h-full group">
             <div className="h-48 w-full relative overflow-hidden bg-brand-bg border-b border-brand-border">
               <img 
-                alt="Google Drive Clone Preview" 
+                alt="Tiles Gallery Preview" 
                 className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB92caCj0MHleA0oC_bVeVen-BJQucclp0G9udzfGSVOe1E9m8ZQ0jxT1ydZl9QTpNEJVAMSlwgMnhfrFfsat4hbAbehdD3wrxqtsVcSVsNxsmq6aBERwZxkKbTH47OqwN81FW8Iv2TidvbSZKL845YoDxl89FysTRl2Ad3VbDRxpb5lhnF-vZBdoY9o0S6vII8R36J2_g_1u8Swv2jYDQ5sCorNYehvTg53HTasFqJM-LJwUYYO1zf"
+                src="/images/tiles-gallery-cover.png"
               />
             </div>
             <div className="p-6 flex flex-col flex-grow">
               <h3 className="font-['Hanken_Grotesk'] text-[24px] leading-[32px] font-semibold text-brand-heading mb-4">
-                Google Drive Clone: The Ultimate Platform for File Sharing
+                Tiles Gallery — Aesthetic Showcase
               </h3>
               <p className="font-['Manrope'] text-[16px] leading-[24px] text-brand-text mb-4 flex-grow">
-                Google Drive Clone is a modern file storage platform built with Next.js, Shadcn UI, and TypeScript. It offers secure uploads, role-based permissions, file organization, real-time updates, and seamless syncing across devices.
+                A modern Next.js tile gallery featuring dynamic search, user profile management, and secure Google authentication.
               </p>
               <div className="flex flex-wrap gap-2 mb-6">
                 <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] leading-[16px] border border-brand-border">Next.js</span>
-                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] leading-[16px] border border-brand-border">React</span>
-                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] leading-[16px] border border-brand-border">Node.js</span>
-                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] leading-[16px] border border-brand-border">Convex</span>
-                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] leading-[16px] border border-brand-border">Clerk</span>
-                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] leading-[16px] border border-brand-border">Tailwind CSS</span>
+                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] leading-[16px] border border-brand-border">BetterAuth</span>
+                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] leading-[16px] border border-brand-border">MongoDB</span>
+                <span className="px-3 py-1 bg-brand-bg text-brand-text rounded-full font-['Manrope'] text-[12px] leading-[16px] border border-brand-border">HeroUI</span>
               </div>
-               <div className="flex gap-4 mt-auto">
+              <div className="flex flex-wrap gap-2 mt-auto">
                 <a
-                  href="/projects/GoogleDriveClone"
-                  className="flex-1 flex items-center justify-center gap-2 py-2 px-4 rounded-lg bg-brand-accent text-[#0F172A] hover:opacity-90 transition-opacity font-['Hanken_Grotesk'] text-[14px] font-semibold"
+                  href="https://5star-tiles-gallery-b13-a8-m48.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 min-w-[100px] flex items-center justify-center gap-2 py-2 px-3 rounded-lg bg-brand-accent text-[#0F172A] hover:opacity-90 transition-opacity font-['Hanken_Grotesk'] text-[13px] font-semibold whitespace-nowrap"
                 >
-                  <span className="material-symbols-outlined text-[18px]">
-                    info
-                  </span>
-                  Details
+                  Live Demo
+                  <i className="fa-solid fa-arrow-up-right-from-square text-[13px]"></i>
+                </a>
+                <a
+                  href="https://github.com/ANIK365PRO/5star-tiles-gallery-b13-a8-m48"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 min-w-[125px] flex items-center justify-center gap-1.5 py-2 px-2 rounded-lg bg-transparent border border-brand-border text-brand-text hover:border-brand-primary hover:text-brand-primary transition-colors font-['Hanken_Grotesk'] text-[12px] font-semibold whitespace-nowrap"
+                >
+                  <i className="fa-brands fa-github text-[14px]"></i>
+                  GitHub
                 </a>
               </div>
             </div>

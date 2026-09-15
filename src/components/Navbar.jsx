@@ -96,7 +96,10 @@ export function Navbar() {
           animate="visible"
           className="flex items-center gap-2 md:gap-4"
         >
-          <motion.button
+          <motion.a
+            href="https://drive.google.com/uc?export=download&id=1SUKt-z1BTHvUZqgZbEvtjjmDy0-ZYGYM"
+            target="_blank"
+            rel="noopener noreferrer"
             variants={itemVariants}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -104,7 +107,7 @@ export function Navbar() {
           >
             <Download className="w-[18px] h-[18px]" />
             Download Resume
-          </motion.button>
+          </motion.a>
           
           <motion.div variants={itemVariants}>
             <ThemeToggle />
@@ -148,14 +151,17 @@ export function Navbar() {
                   {link.name}
                 </motion.a>
               ))}
-              <motion.button
+              <motion.a
+                href="https://drive.google.com/uc?export=download&id=1SUKt-z1BTHvUZqgZbEvtjjmDy0-ZYGYM"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 className="mt-4 bg-brand-primary text-white hover:bg-brand-primary/90 transition-colors px-6 py-2.5 rounded-full text-label-md font-label-md flex items-center justify-center gap-2 shadow-md w-full"
               >
                 <Download className="w-[18px] h-[18px]" />
                 Download Resume
-              </motion.button>
+              </motion.a>
             </div>
           </motion.div>
         )}

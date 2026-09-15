@@ -14,9 +14,9 @@ export default function Home() {
     <>
       <Navbar />
       <HeroSection />
+      <TechnologiesSection />
       
       <AboutSection />
-      <TechnologiesSection />
       <SkillsSection />
 
       <QualificationSection />

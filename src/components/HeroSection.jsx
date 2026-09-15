@@ -294,7 +294,10 @@ export function HeroSection() {
         </motion.button>
 
         {/* Resume */}
-        <motion.button
+        <motion.a
+          href="https://drive.google.com/uc?export=download&id=1SUKt-z1BTHvUZqgZbEvtjjmDy0-ZYGYM"
+          target="_blank"
+          rel="noopener noreferrer"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="
@@ -323,7 +326,7 @@ export function HeroSection() {
           <Download className="w-5 h-5" />
 
           Resume
-        </motion.button>
+        </motion.a>
 
       </motion.div>
 

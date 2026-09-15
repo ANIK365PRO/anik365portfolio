@@ -3,6 +3,7 @@
 import { ThemeProvider } from "next-themes";
 import { useEffect } from "react";
 import Lenis from "lenis";
+import { Toaster } from "react-hot-toast";
 
 export function Providers({ children }) {
   useEffect(() => {
@@ -32,6 +33,7 @@ export function Providers({ children }) {
 
   return (
     <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+      <Toaster position="bottom-right" toastOptions={{ duration: 4000 }} />
       {children}
     </ThemeProvider>
   );
