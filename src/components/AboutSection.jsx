@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Sparkles, Rocket, Headset, Download } from "lucide-react";
 import { useAntigravity } from "@/hooks/useAntigravity";
+import { RESUME_URL } from "@/lib/constants";
 
 export function AboutSection() {
   const avatarRef = useRef(null);
@@ -19,17 +20,26 @@ export function AboutSection() {
     <section className="w-full relative overflow-hidden py-16 lg:py-24 transition-colors duration-300 z-10 perspective-1000" id="about">
 
       <div className="max-w-[1280px] mx-auto w-full px-6 md:pl-[120px] md:pr-10 lg:pl-[140px] lg:pr-20 relative">
-        <motion.div 
+        {/* <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center mb-16 plx-layer-1 flex flex-col items-center"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display-xl font-bold text-brand-heading mb-6 tracking-wide drop-shadow-sm dark:drop-shadow-2xl">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-brand-heading mb-6 tracking-wide drop-shadow-sm dark:drop-shadow-2xl">
             About
           </h2>
           <div className="h-1.5 w-24 mx-auto bg-gradient-to-r from-brand-primary to-transparent rounded-full opacity-70"></div>
-        </motion.div>
+        </motion.div> */}
+
+        <div className="text-center mb-20 plx-layer-1 flex flex-col items-center">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-brand-heading mb-4 tracking-wide drop-shadow-sm dark:drop-shadow-2xl">
+           About
+          </h2>
+          <p className=" font-semibold text-sm tracking-widest  opacity-90 drop-shadow-md">
+           A Brief Introduction
+          </p>
+        </div>
 
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center justify-center">
           {/* Fluid Profile Image */}
@@ -97,7 +107,7 @@ export function AboutSection() {
               viewport={{ once: true }}
               className="fluid-blob rounded-[40%_60%_70%_30%/40%_50%_60%_50%] p-10 md:p-14 mb-10 relative z-10 plx-layer-1"
             >
-              <p className="text-brand-text leading-relaxed text-body-lg font-body-lg drop-shadow-sm">
+              <p className="text-brand-text leading-relaxed text-body-lg font-sans drop-shadow-sm">
                I'm a Full-Stack Developer who loves building modern, scalable web applications using the MERN stack and Next.js. I handle everything from pixel-perfect frontend UIs to secure backend databases. 
                <br></br>
                 <br></br>
@@ -112,7 +122,7 @@ export function AboutSection() {
               className="text-center md:text-left plx-layer-2"
             >
               <motion.a 
-                href="https://drive.google.com/uc?export=download&id=1SUKt-z1BTHvUZqgZbEvtjjmDy0-ZYGYM"
+                href={RESUME_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}

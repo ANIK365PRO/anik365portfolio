@@ -46,7 +46,7 @@ export function QualificationSection() {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-brand-heading mb-4">
             Qualification
           </h2>
-          <p className="font-['Manrope'] text-[18px] leading-[28px] opacity-80 uppercase tracking-widest text-brand-text">
+          <p className="font-sans text-[18px] leading-[28px] opacity-80 tracking-widest text-brand-text">
             My personal journey
           </p>
         </div>
@@ -54,14 +54,14 @@ export function QualificationSection() {
         <div className="flex justify-center gap-8 mb-12">
           <div 
             onClick={() => setActiveTab('experience')}
-            className={`flex items-center gap-2 font-['Hanken_Grotesk'] text-[24px] leading-[32px] font-semibold cursor-pointer transition-colors ${activeTab === 'experience' ? 'text-brand-primary' : 'text-brand-text hover:text-brand-primary'}`}
+            className={`flex items-center gap-2 font-heading text-[24px] leading-[32px] font-semibold cursor-pointer transition-colors ${activeTab === 'experience' ? 'text-brand-primary' : 'text-brand-text hover:text-brand-primary'}`}
           >
             <span className="material-symbols-outlined text-[28px]">work</span>
             Experience
           </div>
           <div 
             onClick={() => setActiveTab('education')}
-            className={`flex items-center gap-2 font-['Hanken_Grotesk'] text-[24px] leading-[32px] font-semibold cursor-pointer transition-colors ${activeTab === 'education' ? 'text-brand-primary' : 'text-brand-text hover:text-brand-primary'}`}
+            className={`flex items-center gap-2 font-heading text-[24px] leading-[32px] font-semibold cursor-pointer transition-colors ${activeTab === 'education' ? 'text-brand-primary' : 'text-brand-text hover:text-brand-primary'}`}
           >
             <span className="material-symbols-outlined text-[28px]">school</span>
             Education
@@ -79,16 +79,16 @@ export function QualificationSection() {
                 <div className={`absolute top-0 w-4 h-4 bg-brand-primary ring-4 ring-brand-bg rounded-full z-10 group-hover:scale-125 transition-transform shadow-[0_0_15px_rgba(15,76,129,0.6)] ${isLeft ? 'left-6 md:left-auto md:-right-[8px]' : 'left-6 md:-left-[8px]'}`}></div>
                 
                 <div className="bg-brand-surface p-6 rounded-xl border border-brand-border/40 hover:border-brand-primary/50 transition-all duration-300 group-hover:-translate-y-1 shadow-sm hover:shadow-md">
-                  <h3 className="font-['Hanken_Grotesk'] text-[24px] leading-[32px] font-semibold text-brand-primary mb-1">{item.title}</h3>
-                  <p className="font-['Manrope'] text-[16px] leading-[24px] text-brand-heading mb-3">{item.subtitle}</p>
+                  <h3 className="font-heading text-[24px] leading-[32px] font-semibold text-brand-primary mb-1">{item.title}</h3>
+                  <p className="font-sans text-[16px] leading-[24px] text-brand-heading mb-3">{item.subtitle}</p>
 
-                  <div className={`flex items-center gap-2 text-brand-text font-['Manrope'] text-[12px] leading-[16px] opacity-80 ${isLeft ? 'md:justify-end' : ''} ${item.description ? 'mb-4' : ''}`}>
+                  <div className={`flex items-center gap-2 text-brand-text font-mono text-[12px] leading-[16px] opacity-80 ${isLeft ? 'md:justify-end' : ''} ${item.description ? 'mb-4' : ''}`}>
                     <span className="material-symbols-outlined text-[16px]">calendar_today</span>
                     {item.date}
                   </div>
 
                   {item.description && (
-                    <p className={`font-['Manrope'] text-sm leading-relaxed text-brand-text opacity-90 ${isLeft ? 'md:text-right text-left' : 'text-left'}`}>
+                    <p className={`font-sans text-sm leading-relaxed text-brand-text opacity-90 ${isLeft ? 'md:text-right text-left' : 'text-left'}`}>
                       {item.description}
                     </p>
                   )}

@@ -33,7 +33,7 @@ export function TechStackSection() {
           viewport={{ once: true }}
           className="text-center md:text-left mb-20 plx-layer-1"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display-xl font-bold text-brand-heading mb-4 tracking-wide drop-shadow-sm dark:drop-shadow-2xl">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-brand-heading mb-4 tracking-wide drop-shadow-sm dark:drop-shadow-2xl">
             Digital Elements
           </h2>
           <p className="text-brand-primary dark:text-[#a0c9ff] font-semibold text-sm tracking-widest uppercase opacity-90 drop-shadow-md">

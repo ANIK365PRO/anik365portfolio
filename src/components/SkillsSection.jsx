@@ -9,11 +9,11 @@ export function SkillsSection() {
       <div className="max-w-[1280px] mx-auto w-full px-4 sm:px-6 md:pl-[120px] md:pr-10 lg:pl-[140px] lg:pr-20 relative">
         {/* Header Section */}
         <div className="text-center mb-20 plx-layer-1 flex flex-col items-center">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display-xl font-bold text-brand-heading mb-4 tracking-wide drop-shadow-sm dark:drop-shadow-2xl">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-brand-heading mb-4 tracking-wide drop-shadow-sm dark:drop-shadow-2xl">
             Skills
           </h2>
-          <p className=" font-semibold text-sm tracking-widest uppercase opacity-90 drop-shadow-md">
-            My Technical Level
+          <p className=" font-semibold text-sm tracking-widest opacity-90 drop-shadow-md">
+            My Technical Level 
           </p>
         </div>
 
@@ -178,13 +178,21 @@ export function SkillsSection() {
                   </div>
                 </div>
                 {/* Skill Item */}
-                {/* <div className="flex items-start gap-3">
+                <div className="flex items-start gap-3">
                   <BadgeCheck className="text-brand-accent w-5 h-5 mt-1 opacity-90 flex-shrink-0" />
                   <div>
-                    <h4 className="text-base font-bold text-brand-heading">AWS</h4>
-                    <span className="text-xs font-medium text-brand-text">Intermediate</span>
+                    <h4 className="text-base font-bold text-brand-heading">Vercel</h4>
+                    <span className="text-xs font-medium text-brand-text">Expert</span>
                   </div>
-                </div> */}
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <BadgeCheck className="text-brand-accent w-5 h-5 mt-1 opacity-90 flex-shrink-0" />
+                  <div>
+                    <h4 className="text-base font-bold text-brand-heading">Netlify</h4>
+                    <span className="text-xs font-medium text-brand-text">Expert</span>
+                  </div>
+                </div>
 
                 {/* Skill Item */}
                 {/* <div className="flex items-start gap-3">

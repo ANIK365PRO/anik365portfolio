@@ -38,7 +38,7 @@ export function ContactSection() {
   };
 
   return (
-    <section className="w-full relative overflow-hidden bg-brand-bg text-brand-text font-['Manrope'] py-16 lg:py-24 transition-colors duration-300" id="contact" data-purpose="contact-section">
+    <section className="w-full relative overflow-hidden bg-brand-bg text-brand-text font-sans py-16 lg:py-24 transition-colors duration-300" id="contact" data-purpose="contact-section">
       <div className="max-w-[1280px] mx-auto w-full px-4 sm:px-6 md:pl-[120px] md:pr-10 lg:pl-[140px] lg:pr-20 flex flex-col items-center">
         {/* Header Section */}
         <div className="text-center mb-8 md:mb-12 max-w-2xl mx-auto">
@@ -56,10 +56,10 @@ export function ContactSection() {
           {/* Left Column: Contact Info */}
           <div className="flex flex-col gap-6">
             <div>
-              <h2 className="font-['Hanken_Grotesk'] text-[32px] leading-[40px] font-bold text-brand-heading mb-2">
+              <h2 className="font-heading text-[32px] leading-[40px] font-bold text-brand-heading mb-2">
                 Get in touch today
               </h2>
-              <p className="font-['Manrope'] text-[16px] leading-[24px] text-brand-text max-w-md">
+              <p className="font-sans text-[16px] leading-[24px] text-brand-text max-w-md">
                 I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
               </p>
             </div>
@@ -67,25 +67,25 @@ export function ContactSection() {
             <div className="flex flex-col gap-4 mt-2">
               <div className="flex items-center gap-4 group cursor-default">
                 <span className="material-symbols-outlined text-brand-primary group-hover:text-brand-accent transition-colors duration-200">mail</span>
-                <a className="font-['Manrope'] text-[16px] leading-[24px] text-brand-heading hover:text-brand-accent transition-colors duration-200" href="mailto:anikmohanta75@gmail.com">
+                <a className="font-sans text-[16px] leading-[24px] text-brand-heading hover:text-brand-accent transition-colors duration-200" href="mailto:anikmohanta75@gmail.com">
                   anikmohanta75@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-4 group cursor-default">
                 <span className="material-symbols-outlined text-brand-primary group-hover:text-brand-accent transition-colors duration-200">call</span>
-                <a className="font-['Manrope'] text-[16px] leading-[24px] text-brand-heading hover:text-brand-accent transition-colors duration-200" href="tel:+8801716608812">
+                <a className="font-sans text-[16px] leading-[24px] text-brand-heading hover:text-brand-accent transition-colors duration-200" href="tel:+8801716608812">
                   +880 1716608812
                 </a>
               </div>
               <div className="flex items-start gap-4 group cursor-default">
                 <span className="material-symbols-outlined text-brand-primary group-hover:text-brand-accent transition-colors duration-200 mt-1">location_on</span>
-                <span className="font-['Manrope'] text-[16px] leading-[24px] text-brand-heading">
+                <span className="font-sans text-[16px] leading-[24px] text-brand-heading">
                   Dhaka<br/>Bangladesh
                 </span>
               </div>
               <div className="flex items-center gap-4 group cursor-default">
                 <span className="material-symbols-outlined text-brand-primary group-hover:text-brand-accent transition-colors duration-200">chat</span>
-                <a className="font-['Manrope'] text-[16px] leading-[24px] text-brand-heading hover:text-brand-accent transition-colors duration-200" href="https://wa.me/8801716608812">
+                <a className="font-sans text-[16px] leading-[24px] text-brand-heading hover:text-brand-accent transition-colors duration-200" href="https://wa.me/8801716608812">
                   +880 1716608812
                 </a>
               </div>
@@ -99,10 +99,10 @@ export function ContactSection() {
                 
                 {/* Name Field */}
                 <div className="flex flex-col gap-1">
-                  <label className="font-['Hanken_Grotesk'] text-[14px] leading-[20px] font-semibold text-brand-text" htmlFor="name">Name <span className="text-red-500">*</span></label>
+                  <label className="font-mono text-[14px] leading-[20px] font-semibold text-brand-text" htmlFor="name">Name <span className="text-red-500">*</span></label>
                   <div className="relative rounded-lg transition-shadow duration-200 focus-within:ring-2 focus-within:ring-brand-primary/15 focus-within:border-brand-primary">
                     <input 
-                      className="w-full bg-brand-bg border border-brand-border text-brand-heading font-['Manrope'] text-[16px] leading-[24px] rounded-lg px-4 py-2 focus:outline-none focus:border-brand-primary focus:ring-0 placeholder-brand-text/50 transition-colors duration-200" 
+                      className="w-full bg-brand-bg border border-brand-border text-brand-heading font-sans text-[16px] leading-[24px] rounded-lg px-4 py-2 focus:outline-none focus:border-brand-primary focus:ring-0 placeholder-brand-text/50 transition-colors duration-200" 
                       id="name" 
                       name="name" 
                       placeholder="John Carter" 
@@ -115,10 +115,10 @@ export function ContactSection() {
 
                 {/* Email Field */}
                 <div className="flex flex-col gap-1">
-                  <label className="font-['Hanken_Grotesk'] text-[14px] leading-[20px] font-semibold text-brand-text" htmlFor="email">Email <span className="text-red-500">*</span></label>
+                  <label className="font-mono text-[14px] leading-[20px] font-semibold text-brand-text" htmlFor="email">Email <span className="text-red-500">*</span></label>
                   <div className="relative rounded-lg transition-shadow duration-200 focus-within:ring-2 focus-within:ring-brand-primary/15 focus-within:border-brand-primary">
                     <input 
-                      className="w-full bg-brand-bg border border-brand-border text-brand-heading font-['Manrope'] text-[16px] leading-[24px] rounded-lg px-4 py-2 focus:outline-none focus:border-brand-primary focus:ring-0 placeholder-brand-text/50 transition-colors duration-200" 
+                      className="w-full bg-brand-bg border border-brand-border text-brand-heading font-sans text-[16px] leading-[24px] rounded-lg px-4 py-2 focus:outline-none focus:border-brand-primary focus:ring-0 placeholder-brand-text/50 transition-colors duration-200" 
                       id="email" 
                       name="email" 
                       placeholder="example@email.com" 
@@ -131,10 +131,10 @@ export function ContactSection() {
 
                 {/* Phone Field */}
                 <div className="flex flex-col gap-1">
-                  <label className="font-['Hanken_Grotesk'] text-[14px] leading-[20px] font-semibold text-brand-text" htmlFor="phone">Phone</label>
+                  <label className="font-mono text-[14px] leading-[20px] font-semibold text-brand-text" htmlFor="phone">Phone</label>
                   <div className="relative rounded-lg transition-shadow duration-200 focus-within:ring-2 focus-within:ring-brand-primary/15 focus-within:border-brand-primary">
                     <input 
-                      className="w-full bg-brand-bg border border-brand-border text-brand-heading font-['Manrope'] text-[16px] leading-[24px] rounded-lg px-4 py-2 focus:outline-none focus:border-brand-primary focus:ring-0 placeholder-brand-text/50 transition-colors duration-200" 
+                      className="w-full bg-brand-bg border border-brand-border text-brand-heading font-sans text-[16px] leading-[24px] rounded-lg px-4 py-2 focus:outline-none focus:border-brand-primary focus:ring-0 placeholder-brand-text/50 transition-colors duration-200" 
                       id="phone" 
                       name="phone" 
                       placeholder="(123) 456 - 789" 
@@ -146,9 +146,9 @@ export function ContactSection() {
 
                 {/* Project Brief / Attachment Field */}
                 <div className="flex flex-col gap-1">
-                  <label className="font-['Hanken_Grotesk'] text-[14px] leading-[20px] font-semibold text-brand-text" htmlFor="file-upload">Project Brief / Attachment</label>
+                  <label className="font-mono text-[14px] leading-[20px] font-semibold text-brand-text" htmlFor="file-upload">Project Brief / Attachment</label>
                   <div className="relative rounded-lg transition-shadow duration-200 focus-within:ring-2 focus-within:ring-brand-primary/15 focus-within:border-brand-primary">
-                    <div className="w-full bg-brand-bg border border-brand-border border-dashed text-brand-heading font-['Manrope'] text-[16px] leading-[24px] rounded-lg px-4 py-2 flex flex-col items-center justify-center gap-1 cursor-pointer hover:bg-brand-border/50 transition-colors duration-200 relative overflow-hidden">
+                    <div className="w-full bg-brand-bg border border-brand-border border-dashed text-brand-heading font-sans text-[16px] leading-[24px] rounded-lg px-4 py-2 flex flex-col items-center justify-center gap-1 cursor-pointer hover:bg-brand-border/50 transition-colors duration-200 relative overflow-hidden">
                       <input 
                         className="absolute inset-0 w-full h-full opacity-0 cursor-pointer" 
                         id="file-upload" 
@@ -158,7 +158,7 @@ export function ContactSection() {
                         disabled={isSubmitting}
                       />
                       <span className="material-symbols-outlined text-brand-primary">attach_file</span>
-                      <span className="text-brand-text font-['Hanken_Grotesk'] text-[14px] leading-[20px] font-semibold whitespace-nowrap overflow-hidden text-ellipsis px-2 max-w-full">
+                      <span className="text-brand-text font-mono text-[14px] leading-[20px] font-semibold whitespace-nowrap overflow-hidden text-ellipsis px-2 max-w-full">
                         {fileName || "Upload File"}
                       </span>
                     </div>
@@ -168,10 +168,10 @@ export function ContactSection() {
 
               {/* Message Field */}
               <div className="flex flex-col gap-1">
-                <label className="font-['Hanken_Grotesk'] text-[14px] leading-[20px] font-semibold text-brand-text" htmlFor="message">Message <span className="text-red-500">*</span></label>
+                <label className="font-mono text-[14px] leading-[20px] font-semibold text-brand-text" htmlFor="message">Message <span className="text-red-500">*</span></label>
                 <div className="relative rounded-lg transition-shadow duration-200 h-32 focus-within:ring-2 focus-within:ring-brand-primary/15 focus-within:border-brand-primary">
                   <textarea 
-                    className="w-full h-full bg-brand-bg border border-brand-border text-brand-heading font-['Manrope'] text-[16px] leading-[24px] rounded-lg px-4 py-2 focus:outline-none focus:border-brand-primary focus:ring-0 placeholder-brand-text/50 resize-none transition-colors duration-200" 
+                    className="w-full h-full bg-brand-bg border border-brand-border text-brand-heading font-sans text-[16px] leading-[24px] rounded-lg px-4 py-2 focus:outline-none focus:border-brand-primary focus:ring-0 placeholder-brand-text/50 resize-none transition-colors duration-200" 
                     id="message" 
                     name="message" 
                     placeholder="Please type your message here..."
@@ -183,7 +183,7 @@ export function ContactSection() {
 
               {/* Submit Button */}
               <button 
-                className={`w-full bg-brand-accent text-[#0F172A] font-['Hanken_Grotesk'] text-[16px] leading-[20px] font-bold py-4 rounded-lg shadow-[0px_4px_12px_rgba(248,190,0,0.2)] mt-2 flex items-center justify-center gap-2 ${isSubmitting ? 'opacity-70 cursor-not-allowed' : 'hover:opacity-90 active:scale-[0.98] transition-all duration-200'}`} 
+                className={`w-full bg-brand-accent text-[#0F172A] font-heading text-[16px] leading-[20px] font-bold py-4 rounded-lg shadow-[0px_4px_12px_rgba(248,190,0,0.2)] mt-2 flex items-center justify-center gap-2 ${isSubmitting ? 'opacity-70 cursor-not-allowed' : 'hover:opacity-90 active:scale-[0.98] transition-all duration-200'}`} 
                 type="submit"
                 disabled={isSubmitting}
               >

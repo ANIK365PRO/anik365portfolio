@@ -126,7 +126,7 @@ export function HeroSection() {
         <p
           className="
             text-headline-md
-            font-headline-md
+            font-heading
             text-brand-text
           "
         >
@@ -139,7 +139,7 @@ export function HeroSection() {
             sm:text-headline-40
             lg:text-headline-40
             xl:text-display-xl
-            font-display-xl
+            font-heading
             text-brand-heading
             tracking-tight
             leading-tight
@@ -181,7 +181,7 @@ export function HeroSection() {
         <h2
           className="
             text-headline-sm
-            font-headline-sm
+            font-heading
             text-brand-primary
             dark:text-brand-accent
             min-h-[32px]
@@ -215,7 +215,7 @@ export function HeroSection() {
           className="
             text-body-md
             sm:text-body-lg
-            font-body-lg
+            font-sans
             text-brand-text
             leading-relaxed
           "
@@ -276,7 +276,7 @@ export function HeroSection() {
             sm:py-4
             rounded-full
             text-label-md
-            font-label-md
+            font-mono
             flex
             items-center
             justify-center
@@ -315,7 +315,7 @@ export function HeroSection() {
             sm:py-4
             rounded-full
             text-label-md
-            font-label-md
+            font-mono
             lg:hidden
             flex
             items-center
@@ -586,10 +586,10 @@ export function HeroSection() {
             icon={
               <Briefcase className="w-5 h-5 text-brand-primary" />
             }
-            value="1"
+            value="1+"
             label={
               <>
-                Year of
+                Years
                 <br />
                 Experience
               </>
@@ -606,7 +606,7 @@ export function HeroSection() {
             icon={
               <CircleCheck className="w-5 h-5 text-green-500" />
             }
-            value="66"
+            value="10+"
             label={
               <>
                 Finished
@@ -640,10 +640,10 @@ export function HeroSection() {
           icon={
             <Briefcase className="w-5 h-5 xl:w-6 xl:h-6 text-brand-primary" />
           }
-          value="1"
+          value="1+"
           label={
             <>
-              Year of
+              Years
               <br />
               Experience
             </>
@@ -669,7 +669,7 @@ export function HeroSection() {
           icon={
             <CircleCheck className="w-5 h-5 xl:w-6 xl:h-6 text-green-500" />
           }
-          value="66"
+          value="10+"
           label={
             <>
               Finished
@@ -698,7 +698,7 @@ export function HeroSection() {
               className="w-1.5 h-3 bg-brand-accent rounded-full"
             />
           </div>
-          <span className="text-label-sm font-label-sm text-brand-text flex items-center gap-1">
+          <span className="text-label-sm font-mono text-brand-text flex items-center gap-1">
             Scroll Down <MousePointerClick className="w-4 h-4" />
           </span>
         </motion.div>
@@ -750,10 +750,10 @@ function StatCard({ icon, value, label }) {
         {icon}
       </div>
       <div>
-        <p className="text-[20px] md:text-headline-sm font-headline-sm text-brand-heading font-bold leading-none">
+        <p className="text-[20px] md:text-headline-sm font-heading text-brand-heading font-bold leading-none">
           {value}
         </p>
-        <p className="text-[10px] md:text-label-sm font-label-sm text-brand-text leading-tight mt-1">
+        <p className="text-[10px] md:text-label-sm font-mono text-brand-text leading-tight mt-1">
           {label}
         </p>
       </div>

@@ -5,11 +5,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Download } from "lucide-react";
 import Image from "next/image";
 import { ThemeToggle } from "./ThemeToggle";
+import { RESUME_URL } from "@/lib/constants";
 
 const navLinks = [
   { name: "Home", href: "#" },
   { name: "About", href: "#about" },
-  { name: "Tech Stack", href: "#technologies" },
+  { name: "Skills", href: "#skills" },
   { name: "Qualification", href: "#qualification" },
   { name: "Projects", href: "#projects" },
   { name: "Contact", href: "#contact" },
@@ -60,7 +61,7 @@ export function Navbar() {
           className="flex items-center gap-3 cursor-pointer"
         >
           <Image src="/my-logo.svg" width={48} height={48} alt="Anik Mohanta Logo" className="w-10 h-10 md:w-12 md:h-12 object-contain" />
-          <span className="text-headline-sm font-headline-sm font-bold text-brand-secondary hidden sm:block whitespace-nowrap">
+          <span className="text-headline-sm font-heading font-bold text-brand-secondary hidden sm:block whitespace-nowrap">
             Anik Mohanta
           </span>
         </motion.div>
@@ -77,7 +78,7 @@ export function Navbar() {
               key={link.name}
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
-              className={`text-label-md font-label-md whitespace-nowrap hover:bg-brand-border/50 rounded-lg transition-all duration-300 px-3 py-2 ${
+              className={`text-label-md font-mono whitespace-nowrap hover:bg-brand-border/50 rounded-lg transition-all duration-300 px-3 py-2 ${
                 index === 0
                   ? "text-brand-accent border-b-2 border-brand-accent pb-1 scale-95"
                   : "text-brand-text hover:text-brand-heading"
@@ -97,16 +98,16 @@ export function Navbar() {
           className="flex items-center gap-2 md:gap-4"
         >
           <motion.a
-            href="https://drive.google.com/uc?export=download&id=1SUKt-z1BTHvUZqgZbEvtjjmDy0-ZYGYM"
+            href={RESUME_URL}
             target="_blank"
             rel="noopener noreferrer"
             variants={itemVariants}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="hidden lg:flex bg-brand-primary text-white hover:bg-brand-primary/90 transition-colors px-6 py-2.5 rounded-full text-label-md font-label-md items-center gap-2 shadow-md"
+            className="hidden lg:flex btn-shine bg-brand-primary text-white hover:bg-brand-primary/90 transition-colors px-6 py-2.5 rounded-full text-label-md font-mono items-center gap-2 shadow-md relative z-10"
           >
-            <Download className="w-[18px] h-[18px]" />
-            Download Resume
+            <Download className="w-[18px] h-[18px] relative z-10" />
+            <span className="relative z-10">Resume</span>
           </motion.a>
           
           <motion.div variants={itemVariants}>
@@ -140,7 +141,7 @@ export function Navbar() {
                 <motion.a
                   key={link.name}
                   whileHover={{ x: 5 }}
-                  className={`text-label-md font-label-md rounded-lg transition-all duration-300 px-3 py-2 ${
+                  className={`text-label-md font-mono rounded-lg transition-all duration-300 px-3 py-2 ${
                     index === 0
                       ? "text-brand-accent bg-brand-border/30"
                       : "text-brand-text hover:text-brand-heading hover:bg-brand-border/30"
@@ -152,15 +153,15 @@ export function Navbar() {
                 </motion.a>
               ))}
               <motion.a
-                href="https://drive.google.com/uc?export=download&id=1SUKt-z1BTHvUZqgZbEvtjjmDy0-ZYGYM"
+                href={RESUME_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="mt-4 bg-brand-primary text-white hover:bg-brand-primary/90 transition-colors px-6 py-2.5 rounded-full text-label-md font-label-md flex items-center justify-center gap-2 shadow-md w-full"
+                className="mt-4 btn-shine bg-brand-primary text-white hover:bg-brand-primary/90 transition-colors px-6 py-2.5 rounded-full text-label-md font-mono flex items-center justify-center gap-2 shadow-md w-full relative z-10"
               >
-                <Download className="w-[18px] h-[18px]" />
-                Download Resume
+                <Download className="w-[18px] h-[18px] relative z-10" />
+                <span className="relative z-10">Download Resume</span>
               </motion.a>
             </div>
           </motion.div>

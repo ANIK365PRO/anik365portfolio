@@ -1,15 +1,21 @@
-import { Hanken_Grotesk, Manrope } from "next/font/google";
+import { Bricolage_Grotesque, Inter, Fira_Code } from "next/font/google";
 import { Providers } from "@/components/Providers";
 import "./globals.css";
 
-const hankenGrotesk = Hanken_Grotesk({
-  variable: "--font-hanken",
+const bricolageGrotesque = Bricolage_Grotesque({
+  variable: "--font-bricolage",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
 });
 
-const manrope = Manrope({
-  variable: "--font-manrope",
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const firaCode = Fira_Code({
+  variable: "--font-fira",
   subsets: ["latin"],
   weight: ["400", "500", "600"],
 });
@@ -24,7 +30,7 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${hankenGrotesk.variable} ${manrope.variable} antialiased`}
+      className={`${bricolageGrotesque.variable} ${inter.variable} ${firaCode.variable} antialiased`}
     >
       <head>
         <link
@@ -36,7 +42,7 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body className="bg-brand-bg text-brand-text min-h-screen overflow-x-hidden font-body-md text-body-md selection:bg-brand-accent selection:text-white flex flex-col">
+      <body className="bg-brand-bg text-brand-text min-h-screen overflow-x-hidden font-sans text-[16px] leading-[24px] selection:bg-brand-accent selection:text-white flex flex-col">
         <Providers>
           {children}
         </Providers>
