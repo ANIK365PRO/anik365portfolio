@@ -73,7 +73,7 @@ export function HeroSection() {
       >
         <SocialLink icon={<LinkedinIcon className="w-5 h-5" />} label="LinkedIn" href="https://www.linkedin.com/in/anik-mohanta" />
         <SocialLink icon={<GithubIcon className="w-5 h-5" />} label="GitHub" href="https://github.com/ANIK365PRO" />
-        <SocialLink icon={<i className="fa-solid fa-envelope text-[1.35rem]"></i>} label="Email" href="mailto:anikmohanta75@gmail.com" />
+        <SocialLink icon={<i className="fa-solid fa-envelope text-[1.35rem]"></i>} label="Email" href="https://mail.google.com/mail/?view=cm&fs=1&to=anikmohanta75@gmail.com" />
         {/* <SocialLink icon={<Globe className="w-5 h-5" />} label="Web" /> */}
         {/* <SocialLink icon={<Share2 className="w-5 h-5" />} label="Share" /> */}
       </motion.aside>
@@ -295,7 +295,7 @@ export function HeroSection() {
 
         {/* Resume */}
         <motion.a
-          href="https://drive.google.com/uc?export=download&id=1SUKt-z1BTHvUZqgZbEvtjjmDy0-ZYGYM"
+          href="https://drive.google.com/file/d/1_Uo7C6UThMKwpRR5e3jqSIxN-khMiC9L/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.05 }}
@@ -359,7 +359,7 @@ export function HeroSection() {
         <SocialLinkMobile
           icon={<i className="fa-solid fa-envelope text-[1.25rem] sm:text-[1.35rem]" />}
           label="Email"
-          href="mailto:anikmohanta75@gmail.com"
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=anikmohanta75@gmail.com"
         />
       </motion.div>
     </motion.div>

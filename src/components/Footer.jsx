@@ -42,7 +42,7 @@ export function Footer() {
             {/* <a aria-label="Twitter X" className="text-brand-primary hover:text-brand-accent transition-all duration-300 hover:-translate-y-1" href="#">
               <i className="fa-brands fa-x-twitter text-[1.35rem]"></i>
             </a> */}
-            <a aria-label="Email" className="text-brand-primary hover:text-brand-accent transition-all duration-300 hover:-translate-y-1" href="mailto:anikmohanta75@gmail.com" target="_blank" rel="noopener noreferrer">
+            <a aria-label="Email" className="text-brand-primary hover:text-brand-accent transition-all duration-300 hover:-translate-y-1" href="https://mail.google.com/mail/?view=cm&fs=1&to=anikmohanta75@gmail.com" target="_blank" rel="noopener noreferrer">
               <i className="fa-solid fa-envelope text-[1.35rem]"></i>
             </a>
           </div>

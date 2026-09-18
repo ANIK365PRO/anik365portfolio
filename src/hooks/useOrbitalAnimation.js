@@ -25,30 +25,35 @@ export function useOrbitalAnimation() {
       ease: "power1.inOut",
     };
 
-    gsap.to(card1Ref.current, { ...floatConfig, delay: 0 });
-    gsap.to(card2Ref.current, { ...floatConfig, delay: 1 });
-    gsap.to(card3Ref.current, { ...floatConfig, delay: 2 });
+    if (card1Ref.current) gsap.to(card1Ref.current, { ...floatConfig, delay: 0 });
+    if (card2Ref.current) gsap.to(card2Ref.current, { ...floatConfig, delay: 1 });
+    if (card3Ref.current) gsap.to(card3Ref.current, { ...floatConfig, delay: 2 });
 
     // 2. Scroll-triggered parallax for the entire right-side container
     const mm = gsap.matchMedia();
 
     mm.add("(min-width: 1024px)", () => {
-      gsap.to(containerRef.current, {
-        y: 100, // Move down slightly as you scroll
-        ease: "none",
-        scrollTrigger: {
-          trigger: containerRef.current,
-          start: "top center",
-          end: "bottom top",
-          scrub: true,
-        },
-      });
+      if (containerRef.current) {
+        gsap.to(containerRef.current, {
+          y: 100, // Move down slightly as you scroll
+          ease: "none",
+          scrollTrigger: {
+            trigger: containerRef.current,
+            start: "top center",
+            end: "bottom top",
+            scrub: true,
+          },
+        });
+      }
     });
 
     return () => {
       // Cleanup
       mm.revert();
-      gsap.killTweensOf([card1Ref.current, card2Ref.current, card3Ref.current, containerRef.current]);
+      const targets = [card1Ref.current, card2Ref.current, card3Ref.current, containerRef.current].filter(Boolean);
+      if (targets.length) {
+        gsap.killTweensOf(targets);
+      }
     };
   }, []);
 

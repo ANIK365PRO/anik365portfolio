@@ -67,7 +67,7 @@ export function ContactSection() {
             <div className="flex flex-col gap-4 mt-2">
               <div className="flex items-center gap-4 group cursor-default">
                 <span className="material-symbols-outlined text-brand-primary group-hover:text-brand-accent transition-colors duration-200">mail</span>
-                <a className="font-sans text-[16px] leading-[24px] text-brand-heading hover:text-brand-accent transition-colors duration-200" href="mailto:anikmohanta75@gmail.com">
+                <a className="font-sans text-[16px] leading-[24px] text-brand-heading hover:text-brand-accent transition-colors duration-200" href="https://mail.google.com/mail/?view=cm&fs=1&to=anikmohanta75@gmail.com" target="_blank" rel="noopener noreferrer">
                   anikmohanta75@gmail.com
                 </a>
               </div>
